@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package user;
 
-/**
- *
- * @author ChhunLay
- */
+
 public class Login extends javax.swing.JFrame {
 
     /**
@@ -34,21 +28,20 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtEmail = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        txtPassword = new javax.swing.JPasswordField();
+        rdUser = new javax.swing.JRadioButton();
+        rbAdmin = new javax.swing.JRadioButton();
+        rdSupplier = new javax.swing.JRadioButton();
+        btnLogin = new javax.swing.JButton();
+        lblSignUp = new javax.swing.JLabel();
+        lblForgotPassword = new javax.swing.JLabel();
+        lblDoNotHaveAnAccount = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 255));
@@ -57,15 +50,15 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trolley.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 66, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 48)); // NOI18N
         jLabel2.setText("Baby Mart");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 48)); // NOI18N
         jLabel3.setText("Systems");
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 48)); // NOI18N
         jLabel4.setText("Management");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
 
@@ -82,20 +75,20 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 6, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Maiandra GD", 1, 48)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 48)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Login");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Malgun Gothic", 0, 24)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtEmail.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 24)); // NOI18N
+        txtEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtEmailActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 330, -1));
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 330, -1));
 
-        jLabel7.setFont(new java.awt.Font("Malgun Gothic", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Email:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
@@ -103,68 +96,68 @@ public class Login extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, -1, 39));
 
-        jLabel9.setFont(new java.awt.Font("Malgun Gothic", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Password:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
 
-        jPasswordField1.setFont(new java.awt.Font("Maiandra GD", 0, 24)); // NOI18N
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 330, 41));
+        txtPassword.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 24)); // NOI18N
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 330, -1));
 
-        jRadioButton1.setFont(new java.awt.Font("Maiandra GD", 1, 16)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton1.setText("User");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        rdUser.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 16)); // NOI18N
+        rdUser.setForeground(new java.awt.Color(255, 255, 255));
+        rdUser.setText("User");
+        rdUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                rdUserActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, -1, -1));
+        jPanel1.add(rdUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, -1, -1));
 
-        jRadioButton2.setFont(new java.awt.Font("Maiandra GD", 1, 16)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton2.setText("Admin");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        rbAdmin.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 16)); // NOI18N
+        rbAdmin.setForeground(new java.awt.Color(255, 255, 255));
+        rbAdmin.setText("Admin");
+        rbAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                rbAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, -1, -1));
+        jPanel1.add(rbAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, -1, -1));
 
-        jRadioButton3.setFont(new java.awt.Font("Maiandra GD", 1, 16)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton3.setText("Supplier");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        rdSupplier.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 16)); // NOI18N
+        rdSupplier.setForeground(new java.awt.Color(255, 255, 255));
+        rdSupplier.setText("Supplier");
+        rdSupplier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                rdSupplierActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, -1, -1));
+        jPanel1.add(rdSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Maiandra GD", 1, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(153, 153, 255));
-        jButton1.setText("Login");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnLogin.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 24)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(153, 153, 255));
+        btnLogin.setText("Login");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 330, 40));
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 330, 40));
 
-        jLabel10.setFont(new java.awt.Font("Maiandra GD", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Sign Up");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, -1, -1));
+        lblSignUp.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 14)); // NOI18N
+        lblSignUp.setForeground(new java.awt.Color(255, 255, 255));
+        lblSignUp.setText("Sign Up");
+        jPanel1.add(lblSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Maiandra GD", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Forget Password?");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, -1, -1));
+        lblForgotPassword.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 14)); // NOI18N
+        lblForgotPassword.setForeground(new java.awt.Color(255, 255, 255));
+        lblForgotPassword.setText("Forget Password?");
+        jPanel1.add(lblForgotPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Maiandra GD", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(102, 102, 255));
-        jLabel12.setText("Don't have an account?");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, -1, -1));
+        lblDoNotHaveAnAccount.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 14)); // NOI18N
+        lblDoNotHaveAnAccount.setForeground(new java.awt.Color(102, 102, 255));
+        lblDoNotHaveAnAccount.setText("Don't have an account?");
+        jPanel1.add(lblDoNotHaveAnAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 460, 560));
 
@@ -176,25 +169,25 @@ public class Login extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel5MouseClicked
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtEmailActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void rdUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdUserActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_rdUserActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void rbAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_rbAdminActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void rdSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdSupplierActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_rdSupplierActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -232,11 +225,8 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -247,10 +237,13 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblDoNotHaveAnAccount;
+    private javax.swing.JLabel lblForgotPassword;
+    private javax.swing.JLabel lblSignUp;
+    private javax.swing.JRadioButton rbAdmin;
+    private javax.swing.JRadioButton rdSupplier;
+    private javax.swing.JRadioButton rdUser;
+    private javax.swing.JTextField txtEmail;
+    private javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
 }

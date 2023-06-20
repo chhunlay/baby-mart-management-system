@@ -6,6 +6,8 @@ package user;
 
 import admin.ManageCategory;
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -66,6 +68,11 @@ public class UserDashboard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 153));
@@ -105,7 +112,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/dashboard.png"))); // NOI18N
         jLabel9.setText("    DASHBOARD");
         jPanel3.add(jLabel9);
-        jLabel9.setBounds(40, 10, 197, 30);
+        jLabel9.setBounds(40, 20, 197, 30);
 
         jPanel2.add(jPanel3);
         jPanel3.setBounds(0, 30, 270, 60);
@@ -324,6 +331,20 @@ public class UserDashboard extends javax.swing.JFrame {
         useraccount.setVisible(true);
         useraccount.pack();
     }//GEN-LAST:event_jLabel23MouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(double i =0.1;i<=1.0; i+=0.1){
+            try {
+                String s ="" + i;
+                float f = Float.parseFloat(s);
+                this.setOpacity(f);
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

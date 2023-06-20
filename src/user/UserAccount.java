@@ -4,15 +4,24 @@
  */
 package user;
 
+import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import static user.UserDashboard.jLabel17;
+import static user.UserDashboard.jLabel23;
+import static user.UserDashboard.jLabel9;
+import static user.UserDashboard.jPanel14;
+import static user.UserDashboard.jPanel7;
+
 /**
  *
  * @author ADMIN
  */
 public class UserAccount extends javax.swing.JFrame {
 
-    /**
-     * Creates new form UserAccount
-     */
+    Color textPrimaryColor = new Color(102, 120, 138);
+    Color primaryColor = new Color(42, 58, 73);
+    
     public UserAccount() {
         initComponents();
     }
@@ -26,21 +35,191 @@ public class UserAccount extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel6 = new javax.swing.JPanel();
+        jLabel36 = new javax.swing.JLabel();
+        jTextField36 = new javax.swing.JTextField();
+        jTextField37 = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jTextField38 = new javax.swing.JTextField();
+        jTextField39 = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        jTextField40 = new javax.swing.JTextField();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jTextField41 = new javax.swing.JTextField();
+        jTextField42 = new javax.swing.JTextField();
+        jLabel42 = new javax.swing.JLabel();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
+        jTextField43 = new javax.swing.JTextField();
+        jTextField44 = new javax.swing.JTextField();
+        jLabel44 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+
+        jPanel6.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel6.setLayout(null);
+
+        jLabel36.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel36.setText("Password");
+        jPanel6.add(jLabel36);
+        jLabel36.setBounds(30, 200, 120, 24);
+
+        jTextField36.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField36);
+        jTextField36.setBounds(20, 220, 240, 28);
+
+        jTextField37.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField37);
+        jTextField37.setBounds(20, 70, 240, 28);
+
+        jLabel37.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel37.setText("Supplier ID");
+        jPanel6.add(jLabel37);
+        jLabel37.setBounds(30, 50, 120, 24);
+
+        jLabel38.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel38.setText("Username");
+        jPanel6.add(jLabel38);
+        jLabel38.setBounds(30, 100, 120, 24);
+
+        jTextField38.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField38);
+        jTextField38.setBounds(20, 120, 240, 28);
+
+        jTextField39.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField39);
+        jTextField39.setBounds(20, 170, 240, 28);
+
+        jLabel39.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel39.setText("Email");
+        jPanel6.add(jLabel39);
+        jLabel39.setBounds(30, 150, 120, 24);
+
+        jTextField40.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField40);
+        jTextField40.setBounds(20, 270, 240, 28);
+
+        jLabel40.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel40.setText("Phone");
+        jPanel6.add(jLabel40);
+        jLabel40.setBounds(30, 250, 120, 24);
+
+        jLabel41.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel41.setText("Security Question");
+        jPanel6.add(jLabel41);
+        jLabel41.setBounds(290, 50, 210, 24);
+
+        jTextField41.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField41);
+        jTextField41.setBounds(280, 70, 240, 28);
+
+        jTextField42.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField42);
+        jTextField42.setBounds(280, 120, 240, 28);
+
+        jLabel42.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel42.setText("Answer");
+        jPanel6.add(jLabel42);
+        jLabel42.setBounds(290, 100, 150, 24);
+
+        jButton16.setBackground(new java.awt.Color(51, 153, 255));
+        jButton16.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jButton16.setText("Delete");
+        jPanel6.add(jButton16);
+        jButton16.setBounds(430, 270, 110, 40);
+
+        jButton17.setBackground(new java.awt.Color(0, 204, 255));
+        jButton17.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jButton17.setText("Update");
+        jPanel6.add(jButton17);
+        jButton17.setBounds(300, 270, 110, 40);
+
+        jButton18.setBackground(new java.awt.Color(255, 255, 255));
+        jButton18.setFont(new java.awt.Font("AKbalthom Kbach", 0, 24)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(255, 0, 51));
+        jButton18.setText("X");
+        jButton18.setBorder(null);
+        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton18MouseClicked(evt);
+            }
+        });
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton18);
+        jButton18.setBounds(550, 0, 40, 40);
+
+        jLabel43.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel43.setText("Address Line 1(State & Area)");
+        jPanel6.add(jLabel43);
+        jLabel43.setBounds(290, 160, 210, 24);
+
+        jTextField43.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField43);
+        jTextField43.setBounds(280, 180, 240, 28);
+
+        jTextField44.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jTextField44);
+        jTextField44.setBounds(280, 230, 240, 28);
+
+        jLabel44.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel44.setText("Address 2 (Country)");
+        jPanel6.add(jLabel44);
+        jLabel44.setBounds(290, 210, 150, 24);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 542, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseClicked
+        // TODO add your handling code here:
+        setVisible(false);
+        UserDashboard.jPanel7.setBackground(primaryColor);
+        UserDashboard.jPanel14.setBackground(primaryColor);
+        UserDashboard.jLabel23.setForeground(textPrimaryColor);
+        UserDashboard.jLabel17.setVisible(true);
+        UserDashboard.jLabel9.setVisible(false);
+    }//GEN-LAST:event_jButton18MouseClicked
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(double i =0.1;i<=1.0; i+=0.1){
+            try {
+                String s ="" + i;
+                float f = Float.parseFloat(s);
+                this.setOpacity(f);
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -78,5 +257,27 @@ public class UserAccount extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JTextField jTextField36;
+    private javax.swing.JTextField jTextField37;
+    private javax.swing.JTextField jTextField38;
+    private javax.swing.JTextField jTextField39;
+    private javax.swing.JTextField jTextField40;
+    private javax.swing.JTextField jTextField41;
+    private javax.swing.JTextField jTextField42;
+    private javax.swing.JTextField jTextField43;
+    private javax.swing.JTextField jTextField44;
     // End of variables declaration//GEN-END:variables
 }

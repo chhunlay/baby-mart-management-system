@@ -5,6 +5,8 @@
 package user;
 
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import static user.UserDashboard.jLabel21;
 import static user.UserDashboard.jLabel5;
 import static user.UserDashboard.jLabel6;
@@ -55,6 +57,12 @@ public class Purchase extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(102, 153, 255));
         jPanel1.setLayout(null);
@@ -136,13 +144,15 @@ public class Purchase extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(10, 410, 80, 40);
+        jButton1.setBounds(10, 410, 100, 40);
 
+        jButton2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jButton2.setText("Clear");
         jPanel1.add(jButton2);
-        jButton2.setBounds(140, 410, 80, 40);
+        jButton2.setBounds(120, 410, 100, 40);
 
         jButton3.setBackground(new java.awt.Color(102, 102, 102));
+        jButton3.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jButton3.setText("Add");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,11 +160,12 @@ public class Purchase extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(10, 350, 80, 40);
+        jButton3.setBounds(10, 350, 100, 40);
 
+        jButton4.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jButton4.setText("Purchase");
         jPanel1.add(jButton4);
-        jButton4.setBounds(140, 350, 80, 40);
+        jButton4.setBounds(120, 350, 100, 40);
 
         jLabel3.setBackground(new java.awt.Color(204, 204, 204));
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
@@ -199,20 +210,9 @@ public class Purchase extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton5);
-        jButton5.setBounds(720, 0, 30, 30);
+        jButton5.setBounds(800, 10, 40, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, -5, 850, 630));
 
         pack();
         setLocationRelativeTo(null);
@@ -247,6 +247,20 @@ public class Purchase extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(double i =0.1;i<=1.0; i+=0.1){
+            try {
+                String s ="" + i;
+                float f = Float.parseFloat(s);
+                this.setOpacity(f);
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

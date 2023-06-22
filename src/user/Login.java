@@ -48,7 +48,6 @@ public class Login extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 255));
@@ -57,17 +56,17 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trolley.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 66, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 48)); // NOI18N
         jLabel2.setText("Baby Mart");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, -1));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 220, -1));
 
-        jLabel3.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 48)); // NOI18N
         jLabel3.setText("Systems");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, -1, -1));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 190, -1));
 
-        jLabel4.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 48)); // NOI18N
         jLabel4.setText("Management");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 270, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 560));
 

@@ -4,11 +4,11 @@
  */
 package admin;
 
-import static admin.AdminDashboard.jLabel16;
-import static admin.AdminDashboard.jLabel19;
-import static admin.AdminDashboard.jLabel26;
-import static admin.AdminDashboard.jPanel10;
-import static admin.AdminDashboard.jPanel17;
+//import static admin.AdminDashboard.jLabel16;
+//import static admin.AdminDashboard.jLabel19;
+//import static admin.AdminDashboard.jLabel26;
+//import static admin.AdminDashboard.jPanel10;
+//import static admin.AdminDashboard.jPanel17;
 import java.awt.Color;
 
 /**
@@ -33,21 +33,30 @@ public class SelectSupplier extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTable6 = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBackground(new java.awt.Color(102, 204, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
+        jLabel3.setText("SUPPLIER MANAGEMENT");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 410, 50));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1470, 50));
+
+        jPanel6.setBackground(new java.awt.Color(153, 153, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane6.setBackground(new java.awt.Color(255, 255, 255));
@@ -68,91 +77,45 @@ public class SelectSupplier extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable6.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
+        jTable6.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
         jScrollPane6.setViewportView(jTable6);
 
-        jPanel6.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 960, 350));
+        jPanel6.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 1350, 350));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Supplier");
-        jPanel6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 90, -1));
+        jPanel6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 90, -1));
 
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel6.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 90, 240, 30));
-
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
-        jButton6.setFont(new java.awt.Font("AKbalthom Kbach", 0, 24)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 0, 51));
-        jButton6.setText("X");
-        jButton6.setBorder(null);
-        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton6MouseClicked(evt);
-            }
-        });
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, 40, 30));
+        jTextField6.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel6.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 120, 300, 30));
 
         jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 220, -1));
+        jComboBox1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 270, -1));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText(" Search ");
-        jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, 90, -1));
+        jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 120, 90, -1));
 
         jButton7.setBackground(new java.awt.Color(204, 204, 204));
-        jButton7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(0, 0, 0));
-        jButton7.setText("Clear");
-        jPanel6.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 50, 110, -1));
+        jButton7.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jButton7.setText("CLEAR");
+        jPanel6.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 560, 110, -1));
 
         jButton8.setBackground(new java.awt.Color(204, 204, 204));
-        jButton8.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(0, 0, 0));
-        jButton8.setText("Select");
-        jPanel6.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 110, -1));
+        jButton8.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jButton8.setText("SELECT");
+        jPanel6.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 560, 110, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1470, 630));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
-        // TODO add your handling code here:
-        setVisible(false);
-        AdminDashboard.jPanel10.setBackground(primaryColor);
-        AdminDashboard.jPanel17.setBackground(primaryColor);
-        AdminDashboard.jLabel26.setForeground(textPrimaryColor);
-        AdminDashboard.jLabel19.setVisible(true);
-        AdminDashboard.jLabel16.setVisible(false);
-    }//GEN-LAST:event_jButton6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -190,12 +153,13 @@ public class SelectSupplier extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTable jTable6;

@@ -4,11 +4,11 @@
  */
 package admin;
 
-import static admin.AdminDashboard.jLabel18;
-import static admin.AdminDashboard.jLabel24;
-import static admin.AdminDashboard.jLabel4;
-import static admin.AdminDashboard.jPanel15;
-import static admin.AdminDashboard.jPanel8;
+//import static admin.AdminDashboard.jLabel18;
+//import static admin.AdminDashboard.jLabel24;
+//import static admin.AdminDashboard.jLabel4;
+//import static admin.AdminDashboard.jPanel15;
+//import static admin.AdminDashboard.jPanel8;
 import java.awt.Color;
 
 /**
@@ -34,151 +34,124 @@ public class AddSupplier extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        txtID = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        txtUsername = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtAddress = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txtPassword = new javax.swing.JPasswordField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        txtEmail = new javax.swing.JTextField();
+        txtPhone = new javax.swing.JTextField();
+        btnBack = new javax.swing.JButton();
+        btnSave = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        cbGender = new javax.swing.JComboBox<>();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 255));
-        jPanel1.setLayout(null);
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel1.setText("Password");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 180, 120, 24);
-
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(20, 200, 240, 28);
-
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(20, 50, 240, 28);
-
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Supplier ID");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(30, 30, 120, 24);
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 130, -1));
 
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel3.setText("Username");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(30, 80, 120, 24);
+        txtID.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel1.add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 390, -1));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField3);
-        jTextField3.setBounds(20, 100, 240, 28);
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Supplier Name");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 190, -1));
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(20, 150, 240, 28);
+        txtUsername.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel1.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 390, -1));
 
-        jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel4.setText("Email");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(30, 130, 120, 24);
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Password");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 110, -1));
 
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField6);
-        jTextField6.setBounds(20, 250, 240, 28);
+        txtAddress.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel1.add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 670, 390, -1));
 
-        jLabel6.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel6.setText("Phone");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(30, 230, 120, 24);
+        jLabel5.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Email");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 80, -1));
 
-        jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel7.setText("Address Line 1(State & Area)");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(30, 280, 210, 24);
-
-        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField7);
-        jTextField7.setBounds(20, 300, 240, 28);
-
-        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField8);
-        jTextField8.setBounds(20, 350, 240, 28);
-
-        jLabel8.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel8.setText("Address 2 (Country)");
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(30, 330, 150, 24);
-
-        jButton1.setBackground(new java.awt.Color(51, 153, 255));
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton1.setText("Clear");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(160, 400, 100, 40);
-
-        jButton2.setBackground(new java.awt.Color(0, 204, 255));
-        jButton2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton2.setText("Save");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(30, 400, 100, 40);
-
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
-        jButton4.setFont(new java.awt.Font("AKbalthom Kbach", 0, 24)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 0, 51));
-        jButton4.setText("X");
-        jButton4.setBorder(null);
-        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton4MouseClicked(evt);
-            }
-        });
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        txtPassword.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                txtPasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4);
-        jButton4.setBounds(340, 0, 40, 40);
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 390, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 378, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
-        );
+        jLabel6.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Phone");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, 90, -1));
+
+        jLabel7.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Address");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 640, 100, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 490, 30, 30));
+
+        txtEmail.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 390, -1));
+
+        txtPhone.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel1.add(txtPhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, 390, -1));
+
+        btnBack.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(153, 153, 255));
+        btnBack.setText("CLEAR");
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 740, 140, 40));
+
+        btnSave.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        btnSave.setForeground(new java.awt.Color(153, 153, 255));
+        btnSave.setText("SAVE");
+        jPanel1.add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 740, 140, 40));
+
+        jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Gender");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 80, -1));
+
+        cbGender.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        cbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        jPanel1.add(cbGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 390, -1));
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel9.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
+        jLabel9.setText("SUPPLIER ");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 160, 50));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 50));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 820));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-        // TODO add your handling code here:
-        setVisible(false);
-        AdminDashboard.jPanel8.setBackground(primaryColor);
-        AdminDashboard.jPanel15.setBackground(primaryColor);
-        AdminDashboard.jLabel24.setForeground(textPrimaryColor);
-        AdminDashboard.jLabel4.setVisible(false);
-        AdminDashboard.jLabel18.setVisible(true);
-    }//GEN-LAST:event_jButton4MouseClicked
+    }//GEN-LAST:event_txtPasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,23 +189,25 @@ public class AddSupplier extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnSave;
+    private javax.swing.JComboBox<String> cbGender;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTextField txtAddress;
+    private javax.swing.JTextField txtEmail;
+    private javax.swing.JTextField txtID;
+    private javax.swing.JPasswordField txtPassword;
+    private javax.swing.JTextField txtPhone;
+    private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }

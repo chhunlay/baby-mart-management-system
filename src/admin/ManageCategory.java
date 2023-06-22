@@ -41,33 +41,31 @@ public class ManageCategory extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
         jButton19 = new javax.swing.JButton();
         jButton20 = new javax.swing.JButton();
         jButton21 = new javax.swing.JButton();
         jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
         jTextField17 = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(102, 102, 255));
-        jPanel5.setLayout(null);
+        jPanel5.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Product ID", "Product Name", "Category", "Quantity", "Price"
+                "Category ID", "Category Name", "Description"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, true, true
+                false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -76,136 +74,77 @@ public class ManageCategory extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(jTable4);
 
-        jPanel5.add(jScrollPane4);
-        jScrollPane4.setBounds(380, 130, 570, 380);
+        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 580, 490));
 
-        jLabel13.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel13.setText("Search ");
-        jPanel5.add(jLabel13);
-        jLabel13.setBounds(610, 90, 70, 30);
+        jLabel13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("SEARCH");
+        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 100, 40));
 
-        jTextField13.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.add(jTextField13);
-        jTextField13.setBounds(680, 90, 210, 28);
+        jTextField13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jPanel5.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 100, 280, -1));
 
-        jTextField14.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.add(jTextField14);
-        jTextField14.setBounds(50, 130, 240, 28);
+        jTextField14.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel5.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 290, -1));
 
-        jLabel14.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel14.setText("Product ID");
-        jPanel5.add(jLabel14);
-        jLabel14.setBounds(60, 110, 120, 24);
+        jLabel14.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Category ID");
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 120, 24));
 
-        jLabel15.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel15.setText("Product Name");
-        jPanel5.add(jLabel15);
-        jLabel15.setBounds(60, 160, 120, 24);
+        jLabel15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Category Name");
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 160, 24));
 
-        jTextField15.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.add(jTextField15);
-        jTextField15.setBounds(50, 180, 240, 28);
-
-        jTextField16.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.add(jTextField16);
-        jTextField16.setBounds(50, 230, 240, 28);
-
-        jLabel16.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel16.setText("Category ");
-        jPanel5.add(jLabel16);
-        jLabel16.setBounds(60, 210, 120, 24);
+        jTextField15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel5.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 290, -1));
 
         jButton19.setBackground(new java.awt.Color(204, 204, 204));
-        jButton19.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(0, 0, 0));
-        jButton19.setText("Update");
-        jPanel5.add(jButton19);
-        jButton19.setBounds(200, 370, 90, 40);
+        jButton19.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(153, 153, 255));
+        jButton19.setText("UPDATE");
+        jPanel5.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 140, 40));
 
         jButton20.setBackground(new java.awt.Color(204, 204, 204));
-        jButton20.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(0, 0, 0));
-        jButton20.setText("Delete");
-        jPanel5.add(jButton20);
-        jButton20.setBounds(50, 430, 90, 40);
+        jButton20.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jButton20.setForeground(new java.awt.Color(153, 153, 255));
+        jButton20.setText("DELETE");
+        jPanel5.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 130, 40));
 
         jButton21.setBackground(new java.awt.Color(204, 204, 204));
-        jButton21.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jButton21.setForeground(new java.awt.Color(0, 0, 0));
-        jButton21.setText("Clear");
-        jPanel5.add(jButton21);
-        jButton21.setBounds(200, 430, 90, 40);
+        jButton21.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jButton21.setForeground(new java.awt.Color(153, 153, 255));
+        jButton21.setText("CLEAR");
+        jPanel5.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, 140, 40));
 
         jButton22.setBackground(new java.awt.Color(204, 204, 204));
-        jButton22.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jButton22.setForeground(new java.awt.Color(0, 0, 0));
-        jButton22.setText("Save");
-        jPanel5.add(jButton22);
-        jButton22.setBounds(50, 370, 90, 40);
+        jButton22.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jButton22.setForeground(new java.awt.Color(153, 153, 255));
+        jButton22.setText("SAVE");
+        jPanel5.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 130, 40));
 
-        jButton23.setBackground(new java.awt.Color(255, 255, 255));
-        jButton23.setFont(new java.awt.Font("AKbalthom Kbach", 0, 24)); // NOI18N
-        jButton23.setForeground(new java.awt.Color(255, 0, 51));
-        jButton23.setText("X");
-        jButton23.setBorder(null);
-        jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton23MouseClicked(evt);
-            }
-        });
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(jButton23);
-        jButton23.setBounds(990, 0, 40, 30);
+        jTextField17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jPanel5.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 290, -1));
 
-        jTextField17.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.add(jTextField17);
-        jTextField17.setBounds(50, 280, 240, 28);
+        jLabel17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Description");
+        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 120, 24));
 
-        jLabel17.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel17.setText("Quantity");
-        jPanel5.add(jLabel17);
-        jLabel17.setBounds(60, 260, 120, 24);
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel18.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel18.setText("Price");
-        jPanel5.add(jLabel18);
-        jLabel18.setBounds(60, 310, 120, 24);
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
+        jLabel3.setText("CATEGORY MAGEMENT");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 340, 50));
 
-        jTextField18.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.add(jTextField18);
-        jTextField18.setBounds(50, 330, 240, 28);
+        jPanel5.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1028, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 700));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
-
-    private void jButton23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseClicked
-        // TODO add your handling code here:
-        setVisible(false);
-        AdminDashboard.jPanel6.setBackground(primaryColor);
-        AdminDashboard.jPanel12.setBackground(primaryColor);
-        AdminDashboard.jLabel21.setForeground(textPrimaryColor);
-        AdminDashboard.jLabel5.setVisible(true);
-        AdminDashboard.jLabel6.setVisible(false);
-    }//GEN-LAST:event_jButton23MouseClicked
 
     /**
      * @param args the command line arguments
@@ -233,6 +172,13 @@ public class ManageCategory extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(ManageCategory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -247,21 +193,18 @@ public class ManageCategory extends javax.swing.JFrame {
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable4;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
     // End of variables declaration//GEN-END:variables
 }

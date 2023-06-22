@@ -67,52 +67,47 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
             }
         });
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 153));
-        jPanel1.setLayout(null);
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/shopping.png"))); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 10, 50, 40);
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 50, 80));
 
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel3.setText("ONLINE SHOPPING");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(50, 20, 240, 30);
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 48)); // NOI18N
+        jLabel3.setText("BABY MART MANAGEMENT SYSTEM");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 680, 80));
 
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logout.png"))); // NOI18N
         jLabel2.setText("Logout");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(1180, 30, 100, 30);
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 0, 100, 80));
 
-        jLabel10.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_light.png"))); // NOI18N
-        jLabel10.setText("User@gmail.com");
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(950, 30, 220, 30);
+        jLabel10.setText("exmple@gmail.com");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 220, 80));
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 1280, 70);
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 80));
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
         jPanel2.setLayout(null);
 
-        jPanel3.setBackground(new java.awt.Color(102, 0, 204));
+        jPanel3.setBackground(new java.awt.Color(153, 153, 255));
         jPanel3.setLayout(null);
 
-        jLabel9.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/dashboard.png"))); // NOI18N
         jLabel9.setText("    DASHBOARD");
         jPanel3.add(jLabel9);
-        jLabel9.setBounds(40, 20, 197, 30);
+        jLabel9.setBounds(50, 0, 220, 60);
 
         jPanel2.add(jPanel3);
         jPanel3.setBounds(0, 30, 270, 60);
@@ -126,7 +121,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel6.setBounds(40, 0, 24, 24);
 
         jLabel22.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel22.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(153, 153, 153));
         jLabel22.setText("Manage Products");
         jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -135,7 +130,7 @@ public class UserDashboard extends javax.swing.JFrame {
             }
         });
         jPanel22.add(jLabel22);
-        jLabel22.setBounds(80, 0, 140, 30);
+        jLabel22.setBounds(80, 0, 180, 30);
 
         jPanel13.setBackground(new java.awt.Color(51, 51, 51));
         jPanel13.setLayout(null);
@@ -143,13 +138,13 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel13.setBounds(0, 0, 10, 40);
 
         jPanel2.add(jPanel22);
-        jPanel22.setBounds(0, 180, 270, 40);
+        jPanel22.setBounds(-20, 170, 290, 40);
 
         jPanel6.setBackground(new java.awt.Color(51, 51, 51));
         jPanel6.setLayout(null);
 
         jLabel21.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel21.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(153, 153, 153));
         jLabel21.setText("Purchase");
         jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -182,7 +177,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel12.setBounds(0, 0, 10, 40);
 
         jPanel2.add(jPanel6);
-        jPanel6.setBounds(0, 130, 270, 40);
+        jPanel6.setBounds(-20, 120, 290, 40);
 
         jPanel7.setBackground(new java.awt.Color(51, 51, 51));
         jPanel7.setLayout(null);
@@ -193,7 +188,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel17.setBounds(40, 10, 24, 24);
 
         jLabel23.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel23.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(153, 153, 153));
         jLabel23.setText("My Account");
         jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -221,16 +216,14 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel14.setBounds(0, 0, 10, 40);
 
         jPanel2.add(jPanel7);
-        jPanel7.setBounds(0, 210, 270, 40);
+        jPanel7.setBounds(-20, 200, 290, 40);
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, 70, 270, 470);
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 270, 770));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(null);
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("My Statistics");
         jPanel5.add(jLabel7);
         jLabel7.setBounds(260, 6, 100, 19);
@@ -256,41 +249,34 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel5.add(jLabel12);
         jLabel12.setBounds(20, 90, 120, 16);
 
-        getContentPane().add(jPanel5);
-        jPanel5.setBounds(320, 100, 660, 0);
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 660, 0));
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setLayout(null);
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel13.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel13.setText("Statistics");
-        jPanel8.add(jLabel13);
-        jLabel13.setBounds(380, 10, 100, 19);
+        jPanel8.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 100, -1));
 
         jLabel14.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel14.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(102, 102, 102));
         jLabel14.setText("Total Purchase:  0.0");
-        jPanel8.add(jLabel14);
-        jLabel14.setBounds(330, 40, 120, 16);
+        jPanel8.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 220, -1));
 
         jLabel15.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel15.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(102, 102, 102));
         jLabel15.setText("Total Categories:  0");
-        jPanel8.add(jLabel15);
-        jLabel15.setBounds(19, 43, 120, 16);
+        jPanel8.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 220, -1));
 
         jLabel16.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel16.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(102, 102, 102));
         jLabel16.setText("Total Products:  0");
-        jPanel8.add(jLabel16);
-        jLabel16.setBounds(20, 90, 104, 16);
+        jPanel8.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 200, -1));
 
-        getContentPane().add(jPanel8);
-        jPanel8.setBounds(300, 110, 930, 140);
+        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 1200, 180));
 
         pack();
         setLocationRelativeTo(null);

@@ -48,7 +48,6 @@ public class Login extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 255));
@@ -57,17 +56,17 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trolley.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 66, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 48)); // NOI18N
         jLabel2.setText("Baby Mart");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, -1));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 220, -1));
 
-        jLabel3.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 48)); // NOI18N
         jLabel3.setText("Systems");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, -1, -1));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 190, -1));
 
-        jLabel4.setFont(new java.awt.Font("Maiandra GD", 0, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 48)); // NOI18N
         jLabel4.setText("Management");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 270, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 560));
 
@@ -82,12 +81,12 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 6, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Maiandra GD", 1, 48)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 48)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Login");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Malgun Gothic", 0, 24)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -95,7 +94,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 330, -1));
 
-        jLabel7.setFont(new java.awt.Font("Malgun Gothic", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Email:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
@@ -103,15 +102,15 @@ public class Login extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, -1, 39));
 
-        jLabel9.setFont(new java.awt.Font("Malgun Gothic", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Password:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
 
-        jPasswordField1.setFont(new java.awt.Font("Maiandra GD", 0, 24)); // NOI18N
+        jPasswordField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 330, 41));
 
-        jRadioButton1.setFont(new java.awt.Font("Maiandra GD", 1, 16)); // NOI18N
+        jRadioButton1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
         jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton1.setText("User");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +120,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, -1, -1));
 
-        jRadioButton2.setFont(new java.awt.Font("Maiandra GD", 1, 16)); // NOI18N
+        jRadioButton2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
         jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton2.setText("Admin");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +130,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, -1, -1));
 
-        jRadioButton3.setFont(new java.awt.Font("Maiandra GD", 1, 16)); // NOI18N
+        jRadioButton3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
         jRadioButton3.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton3.setText("Supplier");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -151,17 +150,17 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 330, 40));
 
-        jLabel10.setFont(new java.awt.Font("Maiandra GD", 0, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Sign Up");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Maiandra GD", 0, 14)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Forget Password?");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, -1, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 350, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Maiandra GD", 0, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(102, 102, 255));
         jLabel12.setText("Don't have an account?");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, -1, -1));

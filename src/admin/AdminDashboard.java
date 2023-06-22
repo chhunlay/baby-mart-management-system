@@ -4,9 +4,11 @@
  */
 package admin;
 
+import user.*;
+import admin.ManageProduct;
 import java.awt.Color;
-import javax.swing.JOptionPane;
-import user.Login;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -15,7 +17,7 @@ import user.Login;
 public class AdminDashboard extends javax.swing.JFrame {
 
     /**
-     * Creates new form AdminDashboard
+     * Creates new form UserDashboard
      */
     Color selectionColor = new Color(34, 48, 62);
     Color sideColor = new Color(64, 194, 150);
@@ -23,7 +25,6 @@ public class AdminDashboard extends javax.swing.JFrame {
     
     public AdminDashboard() {
         initComponents();
-        init();
     }
 
     /**
@@ -51,93 +52,98 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
+        jPanel20 = new javax.swing.JPanel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
-        jPanel14 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel15 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
+        jPanel16 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
-        jPanel17 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        jPanel17 = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jPanel19 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
-
-        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
-        jPanel1.setLayout(null);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/shopping.png"))); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 10, 50, 40);
-
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel3.setText("ONLINE SHOPPING");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(50, 20, 240, 30);
-
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logout.png"))); // NOI18N
-        jLabel2.setText("Logout");
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
             }
         });
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(1180, 30, 100, 30);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel10.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/shopping.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 50, 80));
+
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 48)); // NOI18N
+        jLabel3.setText("BABY MART MANAGEMENT SYSTEM");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 680, 80));
+
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logout.png"))); // NOI18N
+        jLabel2.setText("Logout");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 0, 100, 80));
+
+        jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_light.png"))); // NOI18N
-        jLabel10.setText("Admin@gmail.com");
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(950, 30, 220, 30);
+        jLabel10.setText("exmple@gmail.com");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 220, 80));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 80));
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel2.setLayout(null);
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(102, 0, 204));
-        jPanel3.setLayout(null);
+        jPanel3.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/dashboard.png"))); // NOI18N
         jLabel9.setText("    DASHBOARD");
-        jPanel3.add(jLabel9);
-        jLabel9.setBounds(40, 10, 197, 30);
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 220, 60));
 
-        jPanel2.add(jPanel3);
-        jPanel3.setBounds(0, 30, 270, 60);
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 270, 60));
 
         jPanel22.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel22.setLayout(null);
+        jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/product_dark.png"))); // NOI18N
-        jPanel22.add(jLabel6);
-        jLabel6.setBounds(40, 0, 24, 24);
+        jPanel22.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
 
         jLabel22.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel22.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(153, 153, 153));
         jLabel22.setText("Manage Products");
         jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -145,36 +151,31 @@ public class AdminDashboard extends javax.swing.JFrame {
                 jLabel22MouseClicked(evt);
             }
         });
-        jPanel22.add(jLabel22);
-        jLabel22.setBounds(80, 0, 140, 30);
+        jPanel22.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 180, 40));
 
         jPanel13.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel13.setLayout(null);
-        jPanel22.add(jPanel13);
-        jPanel13.setBounds(0, 0, 10, 40);
+        jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel22.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 10, 40));
 
-        jPanel2.add(jPanel22);
-        jPanel22.setBounds(0, 180, 270, 40);
+        jPanel2.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 180, 290, 40));
 
         jPanel6.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel6.setLayout(null);
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel21.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel21.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel21.setText("Manage Categories");
+        jLabel21.setText("Manage Category");
         jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel21MouseClicked(evt);
             }
         });
-        jPanel6.add(jLabel21);
-        jLabel21.setBounds(80, 0, 140, 40);
+        jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 210, 40));
 
         jLabel5.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category_dark.png"))); // NOI18N
-        jPanel6.add(jLabel5);
-        jLabel5.setBounds(40, 0, 24, 40);
+        jPanel6.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 30, 40));
 
         jPanel12.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -189,31 +190,99 @@ public class AdminDashboard extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel6.add(jPanel12);
-        jPanel12.setBounds(0, 0, 10, 40);
+        jPanel6.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel2.add(jPanel6);
-        jPanel6.setBounds(0, 130, 270, 40);
+        jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 120, 290, 40));
+
+        jPanel20.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel31.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/transaction_dark.png"))); // NOI18N
+        jPanel20.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
+
+        jLabel33.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
+        jPanel20.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
+
+        jLabel34.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel34.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel34.setText("Transaction");
+        jLabel34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel34MouseClicked(evt);
+            }
+        });
+        jPanel20.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 140, 40));
+
+        jPanel2.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 390, 290, 40));
+
+        jPanel18.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel23.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
+        jPanel18.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
+
+        jLabel29.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
+        jPanel18.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
+
+        jLabel30.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel30.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel30.setText("Manage Suppliers");
+        jLabel30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel30MouseClicked(evt);
+            }
+        });
+        jPanel18.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 190, 40));
+
+        jPanel2.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 340, 290, 40));
+
+        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel18.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/supplier_dark.png"))); // NOI18N
+        jPanel9.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 30));
+
+        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
+
+        jPanel9.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel25.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel25.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel25.setText("Add Suppliers");
+        jLabel25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel25MouseClicked(evt);
+            }
+        });
+        jPanel9.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 140, 30));
+
+        jPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 280, 290, 40));
 
         jPanel7.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel7.setLayout(null);
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel17.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user_dark.png"))); // NOI18N
-        jPanel7.add(jLabel17);
-        jLabel17.setBounds(40, 10, 24, 24);
-
-        jLabel23.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel23.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel23.setText("Manage Users");
-        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel23MouseClicked(evt);
-            }
-        });
-        jPanel7.add(jLabel23);
-        jLabel23.setBounds(80, 10, 140, 30);
+        jPanel7.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
 
         jPanel14.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -228,59 +297,27 @@ public class AdminDashboard extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel7.add(jPanel14);
-        jPanel14.setBounds(0, 0, 10, 40);
-
-        jPanel2.add(jPanel7);
-        jPanel7.setBounds(0, 210, 270, 40);
-
-        jPanel8.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel8.setLayout(null);
+        jPanel7.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel24.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel24.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel24.setText("Add Suppliers");
+        jLabel24.setText("Manage Users");
         jLabel24.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel24MouseClicked(evt);
             }
         });
-        jPanel8.add(jLabel24);
-        jLabel24.setBounds(80, 10, 140, 30);
+        jPanel7.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 140, 40));
 
-        jLabel4.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/supplier_dark.png"))); // NOI18N
-        jPanel8.add(jLabel4);
-        jLabel4.setBounds(40, 10, 24, 24);
+        jPanel2.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 230, 290, 40));
 
-        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel15.setLayout(null);
-        jPanel8.add(jPanel15);
-        jPanel15.setBounds(0, 0, 10, 40);
+        jPanel10.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.add(jPanel8);
-        jPanel8.setBounds(0, 250, 280, 40);
-
-        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel9.setLayout(null);
-
-        jLabel18.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit_supplier_dark.png"))); // NOI18N
-        jPanel9.add(jLabel18);
-        jLabel18.setBounds(40, 10, 24, 24);
-
-        jLabel25.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel25.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel25.setText("Manage Suppliers");
-        jLabel25.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel25MouseClicked(evt);
-            }
-        });
-        jPanel9.add(jLabel25);
-        jLabel25.setBounds(80, 10, 140, 30);
+        jLabel19.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
+        jPanel10.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
         jPanel16.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -295,31 +332,25 @@ public class AdminDashboard extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel9.add(jPanel16);
-        jPanel16.setBounds(0, 0, 10, 40);
-
-        jPanel2.add(jPanel9);
-        jPanel9.setBounds(0, 290, 270, 40);
-
-        jPanel10.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel10.setLayout(null);
-
-        jLabel19.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/select.png"))); // NOI18N
-        jPanel10.add(jLabel19);
-        jLabel19.setBounds(30, 10, 30, 30);
+        jPanel10.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel26.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel26.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel26.setText("Select Supplers");
+        jLabel26.setText("My Account");
         jLabel26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel26MouseClicked(evt);
             }
         });
-        jPanel10.add(jLabel26);
-        jLabel26.setBounds(80, 10, 140, 30);
+        jPanel10.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 140, 30));
+
+        jPanel11.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel20.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
+        jPanel11.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
         jPanel17.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -334,158 +365,115 @@ public class AdminDashboard extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel10.add(jPanel17);
-        jPanel17.setBounds(0, 0, 10, 40);
+        jPanel11.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel2.add(jPanel10);
-        jPanel10.setBounds(0, 330, 270, 50);
-
-        jPanel11.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel11.setLayout(null);
-
-        jLabel16.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/transaction_dark.png"))); // NOI18N
-        jPanel11.add(jLabel16);
-        jLabel16.setBounds(40, 10, 24, 24);
-
-        jLabel20.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel20.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel20.setText("Transaction");
-        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel27.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel27.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel27.setText("My Account");
+        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel20MouseClicked(evt);
+                jLabel27MouseClicked(evt);
             }
         });
-        jPanel11.add(jLabel20);
-        jLabel20.setBounds(80, 10, 140, 30);
+        jPanel11.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 140, 30));
 
-        jPanel18.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel10.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 200, 290, 40));
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 230, 290, 40));
+
+        jPanel19.setBackground(new java.awt.Color(51, 51, 51));
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 10, Short.MAX_VALUE)
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel11.add(jPanel18);
-        jPanel18.setBounds(0, 0, 10, 40);
+        jPanel2.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel2.add(jPanel11);
-        jPanel11.setBounds(0, 370, 270, 40);
-
-        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel4MouseClicked(evt);
-            }
-        });
-        jPanel4.setLayout(null);
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 270, 770));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(null);
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel7.setText("Statistics");
-        jPanel5.add(jLabel7);
-        jLabel7.setBounds(380, 10, 100, 19);
+        jLabel7.setText("My Statistics");
+        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 6, 100, -1));
 
         jLabel8.setBackground(new java.awt.Color(51, 51, 51));
         jLabel8.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel8.setText("Total Suppliers:  0");
-        jPanel5.add(jLabel8);
-        jLabel8.setBounds(330, 90, 104, 16);
+        jLabel8.setText("Total Purchase:  0.0");
+        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 120, -1));
 
         jLabel11.setBackground(new java.awt.Color(51, 51, 51));
         jLabel11.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(102, 102, 102));
         jLabel11.setText("Total Categories:  0");
-        jPanel5.add(jLabel11);
-        jLabel11.setBounds(19, 43, 120, 16);
+        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 43, 120, -1));
 
         jLabel12.setBackground(new java.awt.Color(51, 51, 51));
         jLabel12.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(102, 102, 102));
         jLabel12.setText("Total Products:  0");
-        jPanel5.add(jLabel12);
-        jLabel12.setBounds(20, 90, 104, 16);
+        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 120, -1));
 
-        jLabel13.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel13.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel13.setText("Total Sales:  0.0");
-        jPanel5.add(jLabel13);
-        jLabel13.setBounds(610, 80, 104, 16);
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 660, 0));
+
+        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel13.setText("Statistics");
+        jPanel8.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 100, -1));
 
         jLabel14.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel14.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel14.setText("Total Users:  0");
-        jPanel5.add(jLabel14);
-        jLabel14.setBounds(330, 40, 104, 16);
+        jLabel14.setText("Today Sales: 0");
+        jPanel8.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 220, -1));
 
         jLabel15.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel15.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel15.setText("Today Sales:  0.0");
-        jPanel5.add(jLabel15);
-        jLabel15.setBounds(610, 40, 104, 16);
+        jLabel15.setText("Total Categories:  0");
+        jPanel8.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 220, -1));
 
-        jPanel4.add(jPanel5);
-        jPanel5.setBounds(30, 40, 930, 140);
+        jLabel16.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel16.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel16.setText("Total Products:  0");
+        jPanel8.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 200, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 1089, Short.MAX_VALUE))
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 562, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
+        jLabel28.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel28.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel28.setText("Total Users: 0");
+        jPanel8.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 220, -1));
+
+        jLabel32.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel32.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel32.setText("Total Salse: 0");
+        jPanel8.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 120, 200, -1));
+
+        jLabel35.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel35.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel35.setText("Total Suppliers: 0");
+        jPanel8.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 200, -1));
+
+        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 1180, 180));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void init(){
-        icons();
-    }
-    private void icons(){
-        jLabel5.setVisible(true);
-        jLabel6.setVisible(true);
-        jLabel17.setVisible(true);
-        jLabel4.setVisible(true);
-        jLabel18.setVisible(true);
-        jLabel19.setVisible(true);
-        jLabel16.setVisible(true);
-        jLabel21.setVisible(true);
-        jLabel22.setVisible(true);
-        jLabel23.setVisible(true);
-        jLabel24.setVisible(true);
-        jLabel25.setVisible(true);
-        jLabel26.setVisible(true);
-        jLabel20.setVisible(true);
-    }
-    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
         // TODO add your handling code here:
@@ -494,22 +482,10 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel21.setForeground(textSelectionColor);
         jLabel5.setVisible(false);
         jLabel6.setVisible(true);
-        ManageCategory manageCategory = new ManageCategory();
-        manageCategory.setVisible(true);
-        manageCategory.pack();
+        Purchase purchase = new Purchase();
+        purchase.setVisible(true);
+        purchase.pack();
     }//GEN-LAST:event_jLabel21MouseClicked
-
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        // TODO add your handling code here:
-        int a = JOptionPane.showConfirmDialog(this, "Do you want to logout now?","Logout", JOptionPane.YES_NO_OPTION); 
-        if(a ==0){
-            new Login().setVisible(true);
-            this.dispose();
-        }
-        Login login = new Login();
-        login.setVisible(true);
-        login.pack();
-    }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
         // TODO add your handling code here:
@@ -518,70 +494,48 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel22.setForeground(textSelectionColor);
         jLabel6.setVisible(false);
         jLabel17.setVisible(true);
-        ManageProduct manageProduct = new ManageProduct();
-        manageProduct.setVisible(true); 
-        manageProduct.pack();
+        PurchaseDetail purchaseDetail = new PurchaseDetail();
+        purchaseDetail.setVisible(true);
+        purchaseDetail.pack();
     }//GEN-LAST:event_jLabel22MouseClicked
 
-    private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
-        jPanel7.setBackground(selectionColor);
-        jPanel14.setBackground(sideColor);
-        jLabel23.setForeground(textSelectionColor);
-        jLabel17.setVisible(false);
-        jLabel4.setVisible(true);
-        ManageUser manageUser = new ManageUser();
-        manageUser.setVisible(true);
-        manageUser.pack();
-    }//GEN-LAST:event_jLabel23MouseClicked
+        for(double i =0.1;i<=1.0; i+=0.1){
+            try {
+                String s ="" + i;
+                float f = Float.parseFloat(s);
+                this.setOpacity(f);
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     private void jLabel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseClicked
         // TODO add your handling code here:
-        jPanel8.setBackground(selectionColor);
-        jPanel15.setBackground(sideColor);
-        jLabel24.setForeground(textSelectionColor);
-        jLabel4.setVisible(false);
-        jLabel18.setVisible(true);
-        AddSupplier addSupplier = new AddSupplier();
-        addSupplier.setVisible(true);
-        addSupplier.pack();
     }//GEN-LAST:event_jLabel24MouseClicked
-
-    private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
-        // TODO add your handling code here:
-        jPanel9.setBackground(selectionColor);
-        jPanel16.setBackground(sideColor);
-        jLabel25.setForeground(textSelectionColor);
-        jLabel18.setVisible(false);
-        jLabel19.setVisible(true);
-        ManageSupplier manageSupplier = new ManageSupplier();
-        manageSupplier.setVisible(true);
-        manageSupplier.pack();
-    }//GEN-LAST:event_jLabel25MouseClicked
 
     private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
         // TODO add your handling code here:
-        jPanel10.setBackground(selectionColor);
-        jPanel17.setBackground(sideColor);
-        jLabel26.setForeground(textSelectionColor);
-        jLabel19.setVisible(false);
-        jLabel16.setVisible(true);
-        SelectSupplier selectsupplier = new SelectSupplier();
-        selectsupplier.setVisible(true);
-        selectsupplier.pack();
     }//GEN-LAST:event_jLabel26MouseClicked
 
-    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+    private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
         // TODO add your handling code here:
-        jPanel11.setBackground(selectionColor);
-        jPanel18.setBackground(sideColor);
-        jLabel20.setForeground(textSelectionColor);
-        jLabel16.setVisible(false);
-        jLabel9.setVisible(true);
-        transaction TransAction = new transaction();
-        TransAction.setVisible(true);
-        TransAction.pack();
-    }//GEN-LAST:event_jLabel20MouseClicked
+    }//GEN-LAST:event_jLabel27MouseClicked
+
+    private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel25MouseClicked
+
+    private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel30MouseClicked
+
+    private void jLabel34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel34MouseClicked
 
     /**
      * @param args the command line arguments
@@ -609,8 +563,9 @@ public class AdminDashboard extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(AdminDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
-      
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new AdminDashboard().setVisible(true);
@@ -626,7 +581,7 @@ public class AdminDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    public static javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel16;
     public static javax.swing.JLabel jLabel17;
     public static javax.swing.JLabel jLabel18;
     public static javax.swing.JLabel jLabel19;
@@ -638,8 +593,16 @@ public class AdminDashboard extends javax.swing.JFrame {
     public static javax.swing.JLabel jLabel24;
     public static javax.swing.JLabel jLabel25;
     public static javax.swing.JLabel jLabel26;
+    public static javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    public static javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    public static javax.swing.JLabel jLabel4;
+    public static javax.swing.JLabel jLabel30;
+    public static javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    public static javax.swing.JLabel jLabel33;
+    public static javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     public static javax.swing.JLabel jLabel5;
     public static javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -655,14 +618,15 @@ public class AdminDashboard extends javax.swing.JFrame {
     public static javax.swing.JPanel jPanel16;
     public static javax.swing.JPanel jPanel17;
     public static javax.swing.JPanel jPanel18;
+    public static javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
+    public static javax.swing.JPanel jPanel20;
     public static javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    public static javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel5;
     public static javax.swing.JPanel jPanel6;
     public static javax.swing.JPanel jPanel7;
-    public static javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel8;
     public static javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
 }

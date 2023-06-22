@@ -4,7 +4,7 @@
  */
 package user;
 
-import admin.ManageCategory;
+import admin.ManageProduct;
 import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -276,7 +276,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel16.setText("Total Products:  0");
         jPanel8.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 200, -1));
 
-        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 1200, 180));
+        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 1190, 180));
 
         pack();
         setLocationRelativeTo(null);

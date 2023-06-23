@@ -1,26 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package user;
 
 import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static user.UserDashboard.jLabel17;
-import static user.UserDashboard.jLabel23;
+import static user.UserDashboard.jLabel11;
+import static user.UserDashboard.jLabel28;
 import static user.UserDashboard.jLabel9;
-import static user.UserDashboard.jPanel14;
-import static user.UserDashboard.jPanel7;
-
+import static user.UserDashboard.jpIsSelected10;
+import static user.UserDashboard.jpMyAccount;
 /**
  *
  * @author ADMIN
  */
 public class UserAccount extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public UserAccount() {
         initComponents();
@@ -54,12 +51,8 @@ public class UserAccount extends javax.swing.JFrame {
         cbGender = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton18 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField44 = new javax.swing.JTextField();
-        jLabel44 = new javax.swing.JLabel();
+        jButton18 = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -141,51 +134,27 @@ public class UserAccount extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
         jLabel3.setText("USER ACCOUNT");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 310, 50));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 230, 50));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 40, 50));
 
         jPanel6.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 50));
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
-            },
-            new String [] {
-                "ID", "Username", "Gender", "Phone", "Email", "Password", "Address"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-
-        jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, 630, 180));
 
         jButton18.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jButton18.setForeground(new java.awt.Color(153, 153, 255));
         jButton18.setText("DELETE");
         jPanel6.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, 130, 50));
 
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("_________________________________________________________________________________________");
-        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, -1, -1));
-
-        jTextField44.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jTextField44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField44ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField44, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 520, 280, -1));
-
-        jLabel44.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel44.setText("SEARCH");
-        jPanel6.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 250, 40));
-
         jPasswordField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel6.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 280, 40));
 
-        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 730, 800));
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 730, 510));
 
         pack();
         setLocationRelativeTo(null);
@@ -205,9 +174,14 @@ public class UserAccount extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_formWindowOpened
 
-    private void jTextField44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField44ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField44ActionPerformed
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        setVisible(false);
+        UserDashboard.jpMyAccount.setBackground(bgColor);
+        UserDashboard.jpIsSelected10.setBackground(bgColor);
+        UserDashboard.jLabel28.setForeground(textPrimaryColor);
+        UserDashboard.jLabel11.setVisible(true);
+
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -258,18 +232,14 @@ public class UserAccount extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField37;
     private javax.swing.JTextField jTextField38;
     private javax.swing.JTextField jTextField39;
     private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
     // End of variables declaration//GEN-END:variables
 }

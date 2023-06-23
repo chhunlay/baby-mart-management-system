@@ -1,18 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package admin;
 
+package admin;
 import user.*;
 import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static user.UserDashboard.jLabel17;
-import static user.UserDashboard.jLabel23;
-import static user.UserDashboard.jLabel9;
-import static user.UserDashboard.jPanel14;
-import static user.UserDashboard.jPanel7;
 
 /**
  *
@@ -20,8 +11,9 @@ import static user.UserDashboard.jPanel7;
  */
 public class ManageUsers extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public ManageUsers() {
         initComponents();
@@ -55,6 +47,7 @@ public class ManageUsers extends javax.swing.JFrame {
         cbGender = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton18 = new javax.swing.JButton();
@@ -144,6 +137,14 @@ public class ManageUsers extends javax.swing.JFrame {
         jLabel3.setText("USERS MANAGEMENT");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 380, 50));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 40, 50));
+
         jPanel6.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 50));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -210,6 +211,15 @@ public class ManageUsers extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField44ActionPerformed
 
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        setVisible(false);
+        AdminDashboard.jpManageUser.setBackground(bgColor);
+        AdminDashboard.jpIsSelected12.setBackground(bgColor);
+        AdminDashboard.jLabel24.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel17.setVisible(true);
+
+    }//GEN-LAST:event_jLabel2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -253,6 +263,7 @@ public class ManageUsers extends javax.swing.JFrame {
     private javax.swing.JButton jButton18;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;

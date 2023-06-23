@@ -1,14 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package admin;
 
-//import static admin.AdminDashboard.jLabel16;
-//import static admin.AdminDashboard.jLabel20;
-//import static admin.AdminDashboard.jLabel9;
-//import static admin.AdminDashboard.jPanel11;
-//import static admin.AdminDashboard.jPanel18;
+import static admin.AdminDashboard.jLabel36;
+import static admin.AdminDashboard.jpIsSelected6;
+import static admin.AdminDashboard.jpTransactions1;
 import java.awt.Color;
 
 /**
@@ -17,8 +12,9 @@ import java.awt.Color;
  */
 public class Transactions extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public Transactions(){
         initComponents();
@@ -40,6 +36,7 @@ public class Transactions extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -82,6 +79,14 @@ public class Transactions extends javax.swing.JFrame {
         jLabel3.setText("TRANSACTION");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 0, 230, 50));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, 40, 50));
+
         jPanel6.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 50));
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 640));
@@ -89,6 +94,14 @@ public class Transactions extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        setVisible(false);
+        AdminDashboard.jpTransactions1.setBackground(bgColor);
+        AdminDashboard.jpIsSelected6.setBackground(bgColor);
+        AdminDashboard.jLabel38.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel36.setVisible(true);
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -129,6 +142,7 @@ public class Transactions extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel2;

@@ -4,11 +4,15 @@
  */
 package admin;
 
-import static admin.AdminDashboard.jLabel21;
+//import static admin.AdminDashboard.jLabel21;
+import static admin.AdminDashboard.jLabel22;
 import static admin.AdminDashboard.jLabel5;
-import static admin.AdminDashboard.jPanel12;
-import static admin.AdminDashboard.jPanel6;
+import static admin.AdminDashboard.jLabel6;
+import static admin.AdminDashboard.jpIsSelected4;
+//import static admin.AdminDashboard.jPanel12;
 import java.awt.Color;
+import static admin.AdminDashboard.jpManageCategory;
+import static admin.AdminDashboard.jpManageProduct;
 
 /**
  *
@@ -16,8 +20,9 @@ import java.awt.Color;
  */
 public class ManageProduct extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public ManageProduct() {
         initComponents();
@@ -52,6 +57,7 @@ public class ManageProduct extends javax.swing.JFrame {
         jTextField18 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -155,6 +161,14 @@ public class ManageProduct extends javax.swing.JFrame {
         jLabel3.setText("PRODUCT MAGEMENT");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 340, 50));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(967, 0, 40, 50));
+
         jPanel5.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 50));
 
         jComboBox1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -166,6 +180,16 @@ public class ManageProduct extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        setVisible(false);
+        AdminDashboard.jpManageProduct.setBackground(bgColor);
+        AdminDashboard.jpIsSelected4.setBackground(bgColor);
+        AdminDashboard.jLabel22.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel6.setVisible(true);
+
+
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -211,6 +235,7 @@ public class ManageProduct extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;

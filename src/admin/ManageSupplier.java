@@ -1,14 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package admin;
 
-//import static admin.AdminDashboard.jLabel18;
-//import static admin.AdminDashboard.jLabel19;
-//import static admin.AdminDashboard.jLabel25;
-//import static admin.AdminDashboard.jPanel16;
-//import static admin.AdminDashboard.jPanel9;
+package admin;
+import static admin.AdminDashboard.jLabel23;
+import static admin.AdminDashboard.jLabel30;
+import static admin.AdminDashboard.jLabel31;
+import static admin.AdminDashboard.jLabel34;
+import static admin.AdminDashboard.jpIsSelected2;
+import static admin.AdminDashboard.jpManageSuppliers;
+import static admin.AdminDashboard.jpSelectSuppliers;
 import java.awt.Color;
 
 /**
@@ -17,8 +15,9 @@ import java.awt.Color;
  */
 public class ManageSupplier extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public ManageSupplier() {
         initComponents();
@@ -58,6 +57,7 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -175,6 +175,14 @@ public class ManageSupplier extends javax.swing.JFrame {
         jLabel3.setText("SUPPLIERS MANAGEMENT");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 400, 50));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 40, 50));
+
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 820));
@@ -186,6 +194,14 @@ public class ManageSupplier extends javax.swing.JFrame {
     private void jTextField44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField44ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField44ActionPerformed
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        setVisible(false);
+        AdminDashboard.jpManageSuppliers.setBackground(bgColor);
+        AdminDashboard.jpIsSelected2.setBackground(bgColor);
+        AdminDashboard.jLabel30.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel23.setVisible(true);
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -229,6 +245,7 @@ public class ManageSupplier extends javax.swing.JFrame {
     private javax.swing.JButton jButton18;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;

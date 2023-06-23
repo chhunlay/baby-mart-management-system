@@ -3,11 +3,11 @@ package supplier;
 
 import admin.AdminDashboard;
 import java.awt.Color;
-//import static supplier.SupplierDashboard.jLabel13;
-//import static supplier.SupplierDashboard.jLabel4;
-import static supplier.SupplierDashboard.jLabel6;
-import static supplier.SupplierDashboard.jPanel12;
-import static supplier.SupplierDashboard.jPanel6;
+import static supplier.SupplierDashboard.jLabel27;
+import static supplier.SupplierDashboard.jLabel8;
+import static supplier.SupplierDashboard.jpIsSelected9;
+import static supplier.SupplierDashboard.jpMyDelivery;
+
 
 /**
  *
@@ -15,8 +15,9 @@ import static supplier.SupplierDashboard.jPanel6;
  */
 public class MyDeliveryy extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public MyDeliveryy() {
         initComponents();
@@ -38,6 +39,7 @@ public class MyDeliveryy extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -83,17 +85,33 @@ public class MyDeliveryy extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
         jLabel2.setText("DELIVERY DETAILS");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 390, 70));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, 280, 50));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1480, 70));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1440, 0, 40, 50));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1480, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1480, 720));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        setVisible(false);
+        SupplierDashboard.jpMyDelivery.setBackground(bgColor);
+        SupplierDashboard.jpIsSelected9.setBackground(bgColor);
+        SupplierDashboard.jLabel27.setForeground(textPrimaryColor);
+        SupplierDashboard.jLabel8.setVisible(true);
+    }//GEN-LAST:event_jLabel11MouseClicked
 
     /**
      * @param args the command line arguments
@@ -132,6 +150,7 @@ public class MyDeliveryy extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

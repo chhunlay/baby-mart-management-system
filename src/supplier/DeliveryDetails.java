@@ -1,27 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package supplier;
 
-import admin.AdminDashboard;
 import java.awt.Color;
-import static supplier.SupplierDashboard.jLabel21;
-//import static supplier.SupplierDashboard.jLabel4;
-import static supplier.SupplierDashboard.jLabel6;
-import static supplier.SupplierDashboard.jPanel13;
-import static supplier.SupplierDashboard.jPanel7;
+import static supplier.SupplierDashboard.jLabel26;
+import static supplier.SupplierDashboard.jLabel7;
+import static supplier.SupplierDashboard.jpDeliver;
+import static supplier.SupplierDashboard.jpIsSelected8;
 
 /**
  *
- * @author ADMIN
+ * @author ChhunLay
  */
-public class Delivery extends javax.swing.JFrame {
+public class DeliveryDetails extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    /**
+     * Creates new form DeliveryDetails
+     */
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
-    public Delivery() {
+    public DeliveryDetails() {
         initComponents();
     }
 
@@ -34,16 +33,35 @@ public class Delivery extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
+        jLabel3.setText("DELIVERY DETAILS");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 270, 50));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 0, 40, 50));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 50));
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -80,19 +98,27 @@ public class Delivery extends javax.swing.JFrame {
         jTextField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 110, 350, 30));
 
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
-        jLabel3.setText("DELIVERY DETAILS");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 270, 50));
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
+        jLabel4.setText("DELIVERY DETAILS");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 270, 50));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 50));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 660));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        setVisible(false);
+        SupplierDashboard.jpDeliver.setBackground(bgColor);
+        SupplierDashboard.jpIsSelected8.setBackground(bgColor);
+        SupplierDashboard.jLabel26.setForeground(textPrimaryColor);
+        SupplierDashboard.jLabel7.setVisible(true);
+    }//GEN-LAST:event_jLabel11MouseClicked
 
     /**
      * @param args the command line arguments
@@ -111,30 +137,32 @@ public class Delivery extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Delivery.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeliveryDetails.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Delivery.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeliveryDetails.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Delivery.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeliveryDetails.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Delivery.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeliveryDetails.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Delivery().setVisible(true);
+                new DeliveryDetails().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;

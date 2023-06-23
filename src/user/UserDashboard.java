@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package user;
 
 import admin.ManageProduct;
@@ -43,23 +39,18 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        jPanel22 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jPanel13 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jPanel12 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jPanel14 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jpMyAccount = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        jpIsSelected10 = new javax.swing.JPanel();
+        jpPurchaseDetails = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jpIsSelected9 = new javax.swing.JPanel();
+        jpPurchase = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jpIsSelected8 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -81,6 +72,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 50, 80));
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("BABY MART MANAGEMENT SYSTEM");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 680, 80));
 
@@ -97,159 +89,128 @@ public class UserDashboard extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 80));
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel2.setLayout(null);
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 255));
-        jPanel3.setLayout(null);
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/dashboard.png"))); // NOI18N
         jLabel9.setText("    DASHBOARD");
-        jPanel3.add(jLabel9);
-        jLabel9.setBounds(50, 0, 220, 60);
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 220, 60));
 
-        jPanel2.add(jPanel3);
-        jPanel3.setBounds(0, 30, 270, 60);
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 270, 60));
 
-        jPanel22.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel22.setLayout(null);
+        jpMyAccount.setBackground(new java.awt.Color(51, 51, 51));
+        jpMyAccount.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/purchasedetails_dark.png"))); // NOI18N
-        jPanel22.add(jLabel6);
-        jLabel6.setBounds(40, 0, 24, 24);
-
-        jLabel22.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel22.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel22.setText("Manage Products");
-        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel28.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel28.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel28.setText("My Account");
+        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel22MouseClicked(evt);
+                jLabel28MouseClicked(evt);
             }
         });
-        jPanel22.add(jLabel22);
-        jLabel22.setBounds(80, 0, 180, 30);
+        jpMyAccount.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 210, 40));
 
-        jPanel13.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel13.setLayout(null);
-        jPanel22.add(jPanel13);
-        jPanel13.setBounds(0, 0, 10, 40);
+        jLabel11.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user_dark.png"))); // NOI18N
+        jpMyAccount.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 30, 40));
 
-        jPanel2.add(jPanel22);
-        jPanel22.setBounds(-20, 170, 290, 40);
+        jpIsSelected10.setBackground(new java.awt.Color(51, 51, 51));
+        jpIsSelected10.setForeground(new java.awt.Color(255, 255, 255));
 
-        jPanel6.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel6.setLayout(null);
-
-        jLabel21.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel21.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel21.setText("Purchase");
-        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel21MouseClicked(evt);
-            }
-        });
-        jPanel6.add(jLabel21);
-        jLabel21.setBounds(80, 0, 140, 40);
-
-        jLabel5.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/purchase_dark.png"))); // NOI18N
-        jPanel6.add(jLabel5);
-        jLabel5.setBounds(40, 0, 30, 40);
-
-        jPanel12.setBackground(new java.awt.Color(51, 51, 51));
-
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jpIsSelected10Layout = new javax.swing.GroupLayout(jpIsSelected10);
+        jpIsSelected10.setLayout(jpIsSelected10Layout);
+        jpIsSelected10Layout.setHorizontalGroup(
+            jpIsSelected10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 10, Short.MAX_VALUE)
         );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jpIsSelected10Layout.setVerticalGroup(
+            jpIsSelected10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel6.add(jPanel12);
-        jPanel12.setBounds(0, 0, 10, 40);
+        jpMyAccount.add(jpIsSelected10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel2.add(jPanel6);
-        jPanel6.setBounds(-20, 120, 290, 40);
+        jPanel2.add(jpMyAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 270, 40));
 
-        jPanel7.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel7.setLayout(null);
+        jpPurchaseDetails.setBackground(new java.awt.Color(51, 51, 51));
+        jpPurchaseDetails.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel17.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
-        jPanel7.add(jLabel17);
-        jLabel17.setBounds(40, 10, 24, 24);
-
-        jLabel23.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel23.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel23.setText("My Account");
-        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel27.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel27.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel27.setText("Purchase Details");
+        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel23MouseClicked(evt);
+                jLabel27MouseClicked(evt);
             }
         });
-        jPanel7.add(jLabel23);
-        jLabel23.setBounds(80, 10, 140, 30);
+        jpPurchaseDetails.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 210, 40));
 
-        jPanel14.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel8.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/product_dark.png"))); // NOI18N
+        jpPurchaseDetails.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 30, 40));
 
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jpIsSelected9.setBackground(new java.awt.Color(51, 51, 51));
+        jpIsSelected9.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jpIsSelected9Layout = new javax.swing.GroupLayout(jpIsSelected9);
+        jpIsSelected9.setLayout(jpIsSelected9Layout);
+        jpIsSelected9Layout.setHorizontalGroup(
+            jpIsSelected9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 10, Short.MAX_VALUE)
         );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jpIsSelected9Layout.setVerticalGroup(
+            jpIsSelected9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        jPanel7.add(jPanel14);
-        jPanel14.setBounds(0, 0, 10, 40);
+        jpPurchaseDetails.add(jpIsSelected9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel2.add(jPanel7);
-        jPanel7.setBounds(-20, 200, 290, 40);
+        jPanel2.add(jpPurchaseDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 270, 40));
+
+        jpPurchase.setBackground(new java.awt.Color(51, 51, 51));
+        jpPurchase.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel26.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel26.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel26.setText("Purchase");
+        jLabel26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel26MouseClicked(evt);
+            }
+        });
+        jpPurchase.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 210, 40));
+
+        jLabel7.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/purchasedetails_dark.png"))); // NOI18N
+        jpPurchase.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 30, 40));
+
+        jpIsSelected8.setBackground(new java.awt.Color(51, 51, 51));
+        jpIsSelected8.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jpIsSelected8Layout = new javax.swing.GroupLayout(jpIsSelected8);
+        jpIsSelected8.setLayout(jpIsSelected8Layout);
+        jpIsSelected8Layout.setHorizontalGroup(
+            jpIsSelected8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+        jpIsSelected8Layout.setVerticalGroup(
+            jpIsSelected8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
+
+        jpPurchase.add(jpIsSelected8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jPanel2.add(jpPurchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 270, 40));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 270, 770));
-
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(null);
-
-        jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel7.setText("My Statistics");
-        jPanel5.add(jLabel7);
-        jLabel7.setBounds(260, 6, 100, 19);
-
-        jLabel8.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel8.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel8.setText("Total Purchase:  0.0");
-        jPanel5.add(jLabel8);
-        jLabel8.setBounds(300, 40, 120, 16);
-
-        jLabel11.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel11.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel11.setText("Total Categories:  0");
-        jPanel5.add(jLabel11);
-        jLabel11.setBounds(19, 43, 120, 16);
-
-        jLabel12.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel12.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel12.setText("Total Products:  0");
-        jPanel5.add(jLabel12);
-        jLabel12.setBounds(20, 90, 120, 16);
-
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 660, 0));
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -282,42 +243,15 @@ public class UserDashboard extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
-        // TODO add your handling code here:
-        jPanel6.setBackground(selectionColor);
-        jPanel12.setBackground(sideColor);
-        jLabel21.setForeground(textSelectionColor);
-        jLabel5.setVisible(false);
-        jLabel6.setVisible(true);
-        Purchase purchase = new Purchase();
-        purchase.setVisible(true);
-        purchase.pack();
-    }//GEN-LAST:event_jLabel21MouseClicked
-
-    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
-        // TODO add your handling code here:
-        jPanel22.setBackground(selectionColor);
-        jPanel13.setBackground(sideColor);
-        jLabel22.setForeground(textSelectionColor);
-        jLabel6.setVisible(false);
-        jLabel17.setVisible(true);
-        PurchaseDetail purchaseDetail = new PurchaseDetail();
-        purchaseDetail.setVisible(true);
-        purchaseDetail.pack();
-    }//GEN-LAST:event_jLabel22MouseClicked
-
-    private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
-        // TODO add your handling code here:
-        jPanel7.setBackground(selectionColor);
-        jPanel14.setBackground(sideColor);
-        jLabel23.setForeground(textSelectionColor);
-        jLabel17.setVisible(false);
-        jLabel9.setVisible(true);
-        UserAccount useraccount = new UserAccount();
-        useraccount.setVisible(true);
-        useraccount.pack();
-    }//GEN-LAST:event_jLabel23MouseClicked
-
+    private void init(){
+        icons();
+    }
+    
+    private void icons(){
+        jLabel7.setVisible(true);
+        jLabel8.setVisible(true);
+        jLabel11.setVisible(true);
+    }
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         for(double i =0.1;i<=1.0; i+=0.1){
@@ -331,6 +265,43 @@ public class UserDashboard extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_formWindowOpened
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+        //Button MyAccount
+        jpMyAccount.setBackground(selectionColor);
+        jpIsSelected10.setBackground(sideColor);
+        jLabel28.setForeground(textSelectionColor);
+        jLabel11.setVisible(true);
+
+        UserAccount userAccount = new UserAccount();
+        userAccount.setVisible(true);
+        userAccount.pack();
+    }//GEN-LAST:event_jLabel28MouseClicked
+
+    private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
+        //Button Purchase Details
+        jpPurchaseDetails.setBackground(selectionColor);
+        jpIsSelected9.setBackground(sideColor);
+        jLabel27.setForeground(textSelectionColor);
+        jLabel8.setVisible(true);
+
+        PurchaseDetail purchaseDetail = new PurchaseDetail();
+        purchaseDetail.setVisible(true);
+        purchaseDetail.pack();
+    }//GEN-LAST:event_jLabel27MouseClicked
+
+    private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
+        //Button Purchase
+        jpPurchase.setBackground(selectionColor);
+        jpIsSelected8.setBackground(sideColor);
+        jLabel26.setForeground(textSelectionColor);
+        jLabel7.setVisible(true);
+
+        Purchase purchase = new Purchase();
+        purchase.setVisible(true);
+        purchase.pack();   
+
+    }//GEN-LAST:event_jLabel26MouseClicked
 
     /**
      * @param args the command line arguments
@@ -370,33 +341,28 @@ public class UserDashboard extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
+    public static javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    public static javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
-    public static javax.swing.JLabel jLabel21;
-    public static javax.swing.JLabel jLabel22;
-    public static javax.swing.JLabel jLabel23;
+    public static javax.swing.JLabel jLabel26;
+    public static javax.swing.JLabel jLabel27;
+    public static javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
-    public static javax.swing.JLabel jLabel5;
-    public static javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    public static javax.swing.JLabel jLabel7;
+    public static javax.swing.JLabel jLabel8;
     public static javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    public static javax.swing.JPanel jPanel12;
-    public static javax.swing.JPanel jPanel13;
-    public static javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
-    public static javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
-    public static javax.swing.JPanel jPanel6;
-    public static javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    public static javax.swing.JPanel jpIsSelected10;
+    public static javax.swing.JPanel jpIsSelected8;
+    public static javax.swing.JPanel jpIsSelected9;
+    public static javax.swing.JPanel jpMyAccount;
+    public static javax.swing.JPanel jpPurchase;
+    public static javax.swing.JPanel jpPurchaseDetails;
     // End of variables declaration//GEN-END:variables
 }

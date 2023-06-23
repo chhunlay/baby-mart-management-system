@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package admin;
 
-import static admin.AdminDashboard.jLabel21;
+package admin;
+import java.awt.Color;
+//import static admin.AdminDashboard.jLabel21;
+import static admin.AdminDashboard.jLabel26;
 import static admin.AdminDashboard.jLabel5;
-import static admin.AdminDashboard.jPanel12;
-import static admin.AdminDashboard.jPanel6;
+import static admin.AdminDashboard.jpIsSelected8;
+import static admin.AdminDashboard.jpManageCategory;
+//import static admin.AdminDashboard.jPanel12;
 import java.awt.Color;
 
 /**
@@ -16,8 +15,9 @@ import java.awt.Color;
  */
 public class ManageCategory extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public ManageCategory() {
         initComponents();
@@ -49,6 +49,7 @@ public class ManageCategory extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -138,6 +139,14 @@ public class ManageCategory extends javax.swing.JFrame {
         jLabel3.setText("CATEGORY MAGEMENT");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 340, 50));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(967, 0, 40, 50));
+
         jPanel5.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 50));
 
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 700));
@@ -145,6 +154,16 @@ public class ManageCategory extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        setVisible(false);
+        AdminDashboard.jpManageCategory.setBackground(bgColor);        
+        AdminDashboard.jpIsSelected8.setBackground(bgColor);
+        AdminDashboard.jLabel26.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel5.setVisible(true);
+//        jLabel5.setVisible(true);
+        
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -193,6 +212,7 @@ public class ManageCategory extends javax.swing.JFrame {
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;

@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package user;
 
 import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static user.UserDashboard.jLabel21;
-import static user.UserDashboard.jLabel5;
-import static user.UserDashboard.jLabel6;
-import static user.UserDashboard.jPanel12;
-import static user.UserDashboard.jPanel6;
 
 /**
  *
@@ -19,8 +11,9 @@ import static user.UserDashboard.jPanel6;
  */
 public class Purchase extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public Purchase() {
         initComponents();
@@ -55,6 +48,7 @@ public class Purchase extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -189,11 +183,19 @@ public class Purchase extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 48)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
         jLabel3.setText("PURCHASE ");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 230, 70));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 170, 50));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 70));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 0, 40, 50));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 850));
 
@@ -230,6 +232,14 @@ public class Purchase extends javax.swing.JFrame {
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        setVisible(false);
+        UserDashboard.jpPurchase.setBackground(bgColor);
+        UserDashboard.jpIsSelected8.setBackground(bgColor);
+        UserDashboard.jLabel26.setForeground(textPrimaryColor);
+        UserDashboard.jLabel7.setVisible(true);
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -274,6 +284,7 @@ public class Purchase extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

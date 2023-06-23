@@ -1,14 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package admin;
 
-//import static admin.AdminDashboard.jLabel18;
-//import static admin.AdminDashboard.jLabel24;
-//import static admin.AdminDashboard.jLabel4;
-//import static admin.AdminDashboard.jPanel15;
-//import static admin.AdminDashboard.jPanel8;
+import static admin.AdminDashboard.jLabel18;
+import static admin.AdminDashboard.jLabel25;
+import static admin.AdminDashboard.jpAddSuppliers;
 import java.awt.Color;
 
 /**
@@ -17,8 +12,9 @@ import java.awt.Color;
  */
 public class AddSupplier extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public AddSupplier() {
         initComponents();
@@ -53,6 +49,7 @@ public class AddSupplier extends javax.swing.JFrame {
         cbGender = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -141,6 +138,14 @@ public class AddSupplier extends javax.swing.JFrame {
         jLabel9.setText("SUPPLIER ");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 160, 50));
 
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 0, 40, 50));
+
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 820));
@@ -152,6 +157,14 @@ public class AddSupplier extends javax.swing.JFrame {
     private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPasswordActionPerformed
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        setVisible(false);
+        AdminDashboard.jpAddSuppliers.setBackground(bgColor);
+        AdminDashboard.jpIsSelected1.setBackground(bgColor);
+        AdminDashboard.jLabel25.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel18.setVisible(true);
+    }//GEN-LAST:event_jLabel11MouseClicked
 
     /**
      * @param args the command line arguments
@@ -193,6 +206,7 @@ public class AddSupplier extends javax.swing.JFrame {
     private javax.swing.JButton btnSave;
     private javax.swing.JComboBox<String> cbGender;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

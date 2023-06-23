@@ -1,14 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package admin;
 
-//import static admin.AdminDashboard.jLabel16;
-//import static admin.AdminDashboard.jLabel19;
-//import static admin.AdminDashboard.jLabel26;
-//import static admin.AdminDashboard.jPanel10;
-//import static admin.AdminDashboard.jPanel17;
+import static admin.AdminDashboard.jLabel34;
+import static admin.AdminDashboard.jpIsSelected5;
+import static admin.AdminDashboard.jpSelectSuppliers;
 import java.awt.Color;
 
 /**
@@ -17,8 +12,9 @@ import java.awt.Color;
  */
 public class SelectSupplier extends javax.swing.JFrame {
 
-    Color textPrimaryColor = new Color(102, 120, 138);
+    Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
+    Color bgColor = new Color(51, 51, 51);
     
     public SelectSupplier() {
         initComponents();
@@ -34,6 +30,7 @@ public class SelectSupplier extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -50,9 +47,17 @@ public class SelectSupplier extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1430, 0, 40, 50));
+
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
         jLabel3.setText("SUPPLIER MANAGEMENT");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 410, 50));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 410, 50));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1470, 50));
 
@@ -117,6 +122,14 @@ public class SelectSupplier extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        setVisible(false);
+        AdminDashboard.jpSelectSuppliers.setBackground(bgColor);
+        AdminDashboard.jpIsSelected5.setBackground(bgColor);
+        AdminDashboard.jLabel34.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel31.setVisible(true);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -156,6 +169,7 @@ public class SelectSupplier extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

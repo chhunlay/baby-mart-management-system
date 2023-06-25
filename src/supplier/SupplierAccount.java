@@ -41,7 +41,6 @@ public class SupplierAccount extends javax.swing.JFrame {
         jLabel39 = new javax.swing.JLabel();
         jTextField40 = new javax.swing.JTextField();
         jLabel40 = new javax.swing.JLabel();
-        jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jLabel43 = new javax.swing.JLabel();
         jTextField43 = new javax.swing.JTextField();
@@ -101,11 +100,6 @@ public class SupplierAccount extends javax.swing.JFrame {
         jLabel40.setText("Phone");
         jPanel6.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 120, 24));
 
-        jButton16.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(153, 153, 255));
-        jButton16.setText("CLEAR");
-        jPanel6.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 280, 50));
-
         jButton17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jButton17.setForeground(new java.awt.Color(153, 153, 255));
         jButton17.setText("UPDATE");
@@ -152,7 +146,7 @@ public class SupplierAccount extends javax.swing.JFrame {
         jPasswordField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel6.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 280, 40));
 
-        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 730, 500));
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 730, 440));
 
         pack();
         setLocationRelativeTo(null);
@@ -218,7 +212,6 @@ public class SupplierAccount extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> cbGender;
-    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JLabel jLabel10;

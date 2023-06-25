@@ -1,8 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package user;
+
+import dao.UserDao;
+import java.awt.Color;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -10,11 +10,46 @@ package user;
  */
 public class SignUp extends javax.swing.JFrame {
 
-    /**
-     * Creates new form SignUp
-     */
+    UserDao user = new UserDao();
+    Color notEdit = new Color(204, 204, 204);
+
     public SignUp() {
         initComponents();
+        init();
+    }
+
+    public void init() {
+        txtID.setBackground(notEdit);
+        txtID.setText(String.valueOf(user.getMaxRow()));
+
+    }
+
+    public boolean isEmpty() {
+        if (txtUsername.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Username is required", "Warning", 2);
+            return false;
+        }
+        if (txtEmail.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Email address is required", "Warning", 2);
+            return false;
+        }
+        if (!txtEmail.getText().matches("^.+@.+\\..+$")) {
+            JOptionPane.showMessageDialog(this, "Invalid email address", "Warning", 2);
+            return false;
+        }
+        if (String.valueOf(txtPassword.getPassword()).isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Password is required", "Warning", 2);
+            return false;
+        }
+        if (txtPhone.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Phone number is required", "Warning", 2);
+            return false;
+        }
+        if (txtAddress.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Address is required", "Warning", 2);
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -45,6 +80,7 @@ public class SignUp extends javax.swing.JFrame {
         btnSave = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         cbGender = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -105,6 +141,16 @@ public class SignUp extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 650, 100, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
+        jLabel8.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jLabel8KeyPressed(evt);
+            }
+        });
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, 30, 30));
 
         txtEmail.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -116,11 +162,21 @@ public class SignUp extends javax.swing.JFrame {
         btnBack.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         btnBack.setForeground(new java.awt.Color(153, 153, 255));
         btnBack.setText("Back");
+        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 750, 140, 40));
 
         btnSave.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         btnSave.setForeground(new java.awt.Color(153, 153, 255));
         btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 750, 140, 40));
 
         jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -132,6 +188,19 @@ public class SignUp extends javax.swing.JFrame {
         cbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         jPanel1.add(cbGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 400, -1));
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visible.png"))); // NOI18N
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
+        jLabel9.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jLabel9KeyPressed(evt);
+            }
+        });
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, 30, 30));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 850));
 
         pack();
@@ -139,8 +208,63 @@ public class SignUp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtPasswordActionPerformed
+
+    private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBackMouseClicked
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        if (isEmpty()) {
+            int id = Integer.parseInt(txtID.getText());
+            String username = txtUsername.getText();
+            String email = txtEmail.getText();
+            String password = String.valueOf(txtPassword.getPassword());
+            String gender = cbGender.getSelectedItem().toString();  //for combo box
+            String phone = txtPhone.getText();
+            String address = txtAddress.getText();
+
+            if (!user.isEmailExists(email)) {
+                if (!user.isPhoneExists(phone)) {
+                    user.insert(id, username, gender, email, password, phone, address);
+                    new Login().setVisible(true);
+                    this.dispose();
+
+                } else {
+                    JOptionPane.showMessageDialog(this, "This phone number already exists", "Warning", 2);
+
+                }
+
+            } else {
+                JOptionPane.showMessageDialog(this, "This email already exists", "Warning", 2);
+
+            }
+
+        }
+    }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void jLabel8KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel8KeyPressed
+        
+    }//GEN-LAST:event_jLabel8KeyPressed
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        // TODO add your handling code here:
+        txtPassword.setEchoChar((char) 0);
+        jLabel8.setVisible(false);
+        jLabel9.setVisible(true);
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        txtPassword.setEchoChar('*');
+        jLabel8.setVisible(true);
+        jLabel9.setVisible(false);
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel9KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel9KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel9KeyPressed
 
     /**
      * @param args the command line arguments
@@ -190,6 +314,7 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtAddress;
     private javax.swing.JTextField txtEmail;
@@ -198,4 +323,5 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JTextField txtPhone;
     private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
+
 }

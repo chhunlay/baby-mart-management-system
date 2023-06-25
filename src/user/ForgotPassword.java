@@ -1,19 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 
 package user;
 
-/**
- *
- * @author ChhunLay
- */
+import java.awt.Color;
+
 public class ForgotPassword extends javax.swing.JFrame {
 
     /** Creates new form ForgotPassword */
+    
+    Color notEdit = new Color(204,204,204);
+    Color edit = new Color(255,255,255);
+    
     public ForgotPassword() {
         initComponents();
+        init();
     }
 
     /** This method is called from within the constructor to
@@ -31,15 +30,16 @@ public class ForgotPassword extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        lblHide = new javax.swing.JLabel();
+        lblVisible = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
         txtPhone = new javax.swing.JTextField();
         btnBack = new javax.swing.JButton();
         btnSave = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         txtConfirmPassword = new javax.swing.JPasswordField();
         txtPassword1 = new javax.swing.JPasswordField();
+        lblSearch = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -75,8 +75,21 @@ public class ForgotPassword extends javax.swing.JFrame {
         jLabel6.setText("Phone");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 90, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, 40));
+        lblHide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
+        lblHide.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblHideMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lblHide, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, 40));
+
+        lblVisible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visible.png"))); // NOI18N
+        lblVisible.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblVisibleMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lblVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, 40));
 
         txtEmail.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
         jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 310, -1));
@@ -104,9 +117,6 @@ public class ForgotPassword extends javax.swing.JFrame {
         jLabel7.setText("Confirm Password");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 160, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, -1, 40));
-
         txtConfirmPassword.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
         txtConfirmPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,14 +133,39 @@ public class ForgotPassword extends javax.swing.JFrame {
         });
         jPanel1.add(txtPassword1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 310, -1));
 
+        lblSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/search.png"))); // NOI18N
+        lblSearch.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSearchMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lblSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, -1, 30));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 510));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void init(){
+        txtPhone.setBackground(notEdit);
+        txtPhone.setEditable(false);
+        
+        txtPassword1.setBackground(notEdit);
+        txtPassword1.setEditable(false);
+        
+        txtConfirmPassword.setBackground(notEdit);
+        txtConfirmPassword.setEditable(false);
+        
+        //set for button
+        btnSave.setEnabled(false);
+        
+        
+    }
+    
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
-        System.exit(0);
+        new Login().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void txtConfirmPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConfirmPasswordActionPerformed
@@ -145,6 +180,26 @@ public class ForgotPassword extends javax.swing.JFrame {
         new Login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBackMouseClicked
+
+    private void lblHideMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHideMouseClicked
+        txtPassword1.setEchoChar((char) 0);
+        txtConfirmPassword.setEchoChar((char)0);
+        lblHide.setVisible(false);
+        lblVisible.setVisible(true);
+        
+    }//GEN-LAST:event_lblHideMouseClicked
+
+    private void lblVisibleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblVisibleMouseClicked
+        txtPassword1.setEchoChar('*');
+        txtConfirmPassword.setEchoChar('*');
+        lblHide.setVisible(true);
+        lblVisible.setVisible(false);
+        
+    }//GEN-LAST:event_lblVisibleMouseClicked
+
+    private void lblSearchMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSearchMouseClicked
+        
+    }//GEN-LAST:event_lblSearchMouseClicked
 
     /**
      * @param args the command line arguments
@@ -185,14 +240,15 @@ public class ForgotPassword extends javax.swing.JFrame {
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnSave;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblHide;
+    private javax.swing.JLabel lblSearch;
+    private javax.swing.JLabel lblVisible;
     private javax.swing.JPasswordField txtConfirmPassword;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JPasswordField txtPassword1;

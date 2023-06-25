@@ -89,7 +89,7 @@ public class UserDashboard extends javax.swing.JFrame {
         userEmail.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         userEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_light.png"))); // NOI18N
         userEmail.setText("exmple@gmail.com");
-        jPanel1.add(userEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 220, 80));
+        jPanel1.add(userEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 0, 220, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 80));
 

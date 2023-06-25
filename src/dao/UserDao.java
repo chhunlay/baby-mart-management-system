@@ -1,7 +1,6 @@
 
 package dao;
 
-//import com.sun.jdi.connect.spi.Connection;
 import connections.MyConnections;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -28,6 +27,7 @@ public class UserDao {
         }
     }
     
+    //loop to table 
     public int getMaxRow(){
         
         int row = 0;
@@ -93,6 +93,66 @@ public class UserDao {
         }
         
     }
+    //update data to user table
+    public void update(int id, String username, String gender, String email, String password, String phone, String address){
+        String sql = "update user set uname=?, ugender=?, uemail=?, upassword=?, uaddress=? where uid=?";
+        try {
+            ps = con.prepareStatement(sql);
+            
+            ps.setString(1, username);
+            ps.setString(2, gender);
+            ps.setString(3, email);            
+            ps.setString(4, password);
+            ps.setString(5, phone);
+            ps.setString(6, address);
+            ps.setInt(7, id);
+            if(ps.executeUpdate() > 0){
+                JOptionPane.showMessageDialog(null, "User data successfully updated");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    //get user value
+    public String[] getUserValue(int id){
+        String[] value = new String[7];
+        try {
+            ps = con.prepareStatement("select * from user where uid = ?");
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                value[0] = rs.getString(1);
+                value[1] = rs.getString(2);
+                value[2] = rs.getString(3);
+                value[3] = rs.getString(4);
+                value[4] = rs.getString(5);
+                value[5] = rs.getString(6);
+                value[6] = rs.getString(7);                
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return value;
+    }
+    
+    //get userID
+    public int getUserID(String email){
+        int id = 0;
+        try {
+            ps = con.prepareStatement("select uid from user where uemail = ?");
+            ps.setString(1, email);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                id = rs.getInt(1);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return id;
+    }
+    
     
     
 }

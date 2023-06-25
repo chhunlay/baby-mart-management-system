@@ -20,6 +20,7 @@ public class SignUp extends javax.swing.JFrame {
 
     public void init() {
         txtID.setBackground(notEdit);
+        txtID.setEnabled(false);
         txtID.setText(String.valueOf(user.getMaxRow()));
 
     }
@@ -73,14 +74,14 @@ public class SignUp extends javax.swing.JFrame {
         txtPassword = new javax.swing.JPasswordField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        lblHide = new javax.swing.JLabel();
+        lblVisible = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
         txtPhone = new javax.swing.JTextField();
         btnBack = new javax.swing.JButton();
         btnSave = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         cbGender = new javax.swing.JComboBox<>();
-        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -91,7 +92,7 @@ public class SignUp extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Sign Up");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -140,18 +141,34 @@ public class SignUp extends javax.swing.JFrame {
         jLabel7.setText("Address");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 650, 100, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        lblHide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
+        lblHide.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+                lblHideMouseClicked(evt);
             }
         });
-        jLabel8.addKeyListener(new java.awt.event.KeyAdapter() {
+        lblHide.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jLabel8KeyPressed(evt);
+                lblHideKeyPressed(evt);
             }
         });
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, 30, 30));
+        jPanel1.add(lblHide, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, 30, 100));
+
+        lblVisible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visible.png"))); // NOI18N
+        lblVisible.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblVisibleMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblVisibleMouseEntered(evt);
+            }
+        });
+        lblVisible.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                lblVisibleKeyPressed(evt);
+            }
+        });
+        jPanel1.add(lblVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, 30, 100));
 
         txtEmail.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 400, -1));
@@ -188,20 +205,7 @@ public class SignUp extends javax.swing.JFrame {
         cbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         jPanel1.add(cbGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 400, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visible.png"))); // NOI18N
-        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel9MouseClicked(evt);
-            }
-        });
-        jLabel9.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jLabel9KeyPressed(evt);
-            }
-        });
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, 30, 30));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 850));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 850));
 
         pack();
         setLocationRelativeTo(null);
@@ -245,26 +249,30 @@ public class SignUp extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnSaveActionPerformed
 
-    private void jLabel8KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel8KeyPressed
+    private void lblHideKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_lblHideKeyPressed
         
-    }//GEN-LAST:event_jLabel8KeyPressed
+    }//GEN-LAST:event_lblHideKeyPressed
 
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    private void lblHideMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHideMouseClicked
         // TODO add your handling code here:
         txtPassword.setEchoChar((char) 0);
-        jLabel8.setVisible(false);
-        jLabel9.setVisible(true);
-    }//GEN-LAST:event_jLabel8MouseClicked
+        lblHide.setVisible(false);
+        lblVisible.setVisible(true);
+    }//GEN-LAST:event_lblHideMouseClicked
 
-    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    private void lblVisibleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblVisibleMouseClicked
         txtPassword.setEchoChar('*');
-        jLabel8.setVisible(true);
-        jLabel9.setVisible(false);
-    }//GEN-LAST:event_jLabel9MouseClicked
+        lblHide.setVisible(true);
+        lblVisible.setVisible(false);
+    }//GEN-LAST:event_lblVisibleMouseClicked
 
-    private void jLabel9KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel9KeyPressed
+    private void lblVisibleKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_lblVisibleKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel9KeyPressed
+    }//GEN-LAST:event_lblVisibleKeyPressed
+
+    private void lblVisibleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblVisibleMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblVisibleMouseEntered
 
     /**
      * @param args the command line arguments
@@ -313,9 +321,9 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblHide;
+    private javax.swing.JLabel lblVisible;
     private javax.swing.JTextField txtAddress;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtID;

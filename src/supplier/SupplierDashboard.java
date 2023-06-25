@@ -32,7 +32,7 @@ public class SupplierDashboard extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        supplierEmail = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -77,10 +77,10 @@ public class SupplierDashboard extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 0, 100, 80));
 
-        jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_light.png"))); // NOI18N
-        jLabel10.setText("exmple@gmail.com");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 220, 80));
+        supplierEmail.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        supplierEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_light.png"))); // NOI18N
+        supplierEmail.setText("exmple@gmail.com");
+        jPanel1.add(supplierEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 220, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 80));
 
@@ -244,7 +244,8 @@ public class SupplierDashboard extends javax.swing.JFrame {
     
     
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        // TODO add your handling code here:
+        new Login().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
@@ -322,7 +323,6 @@ public class SupplierDashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     public static javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel17;
@@ -345,5 +345,6 @@ public class SupplierDashboard extends javax.swing.JFrame {
     public static javax.swing.JPanel jpIsSelected9;
     public static javax.swing.JPanel jpMyAccount;
     public static javax.swing.JPanel jpMyDelivery;
+    public static javax.swing.JLabel supplierEmail;
     // End of variables declaration//GEN-END:variables
 }

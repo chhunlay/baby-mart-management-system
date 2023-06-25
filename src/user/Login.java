@@ -1,8 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package user;
+
+import admin.AdminDashboard;
+import javax.swing.ButtonGroup;
+import javax.swing.JOptionPane;
+import connections.MyConnections;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import supplier.SupplierDashboard;
 
 /**
  *
@@ -13,8 +21,12 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
+    private ButtonGroup buttonGroup = new ButtonGroup();
+
     public Login() {
         initComponents();
+        init();
+
     }
 
     /**
@@ -39,15 +51,21 @@ public class Login extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        rdUsers = new javax.swing.JRadioButton();
+        rdAdmin = new javax.swing.JRadioButton();
+        rdSuppliers = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 255));
@@ -100,6 +118,11 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, -1, 39));
 
         jLabel9.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -110,35 +133,35 @@ public class Login extends javax.swing.JFrame {
         jPasswordField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 330, 41));
 
-        jRadioButton1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton1.setText("User");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        rdUsers.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
+        rdUsers.setForeground(new java.awt.Color(255, 255, 255));
+        rdUsers.setText("User");
+        rdUsers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                rdUsersActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, -1, -1));
+        jPanel1.add(rdUsers, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 70, -1));
 
-        jRadioButton2.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton2.setText("Admin");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        rdAdmin.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
+        rdAdmin.setForeground(new java.awt.Color(255, 255, 255));
+        rdAdmin.setText("Admin");
+        rdAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                rdAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, -1, -1));
+        jPanel1.add(rdAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, 90, -1));
 
-        jRadioButton3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton3.setText("Supplier");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        rdSuppliers.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
+        rdSuppliers.setForeground(new java.awt.Color(255, 255, 255));
+        rdSuppliers.setText("Supplier");
+        rdSuppliers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                rdSuppliersActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, -1, -1));
+        jPanel1.add(rdSuppliers, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 100, -1));
 
         jButton1.setFont(new java.awt.Font("Maiandra GD", 1, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(153, 153, 255));
@@ -153,11 +176,21 @@ public class Login extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Sign Up");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Forget Password?");
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 350, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
@@ -165,11 +198,44 @@ public class Login extends javax.swing.JFrame {
         jLabel12.setText("Don't have an account?");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, -1, -1));
 
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visible.png"))); // NOI18N
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, -1, 39));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 460, 560));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void init() {
+        buttonGroup.add(rdAdmin);
+        buttonGroup.add(rdSuppliers);
+        buttonGroup.add(rdUsers);
+
+        rdAdmin.setSelected(true);
+
+    }
+
+    private boolean isEmpty() {
+        if (jTextField1.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Email address is required", "Warning", 2);
+            return false;
+        }
+        if (!jTextField1.getText().matches("^.+@.+\\..+$")) {
+            JOptionPane.showMessageDialog(this, "Invalid email address", "Warning", 2);
+            return false;
+        }
+        if (String.valueOf(jPasswordField1.getPassword()).isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Password is required", "Warning", 2);
+            return false;
+        }
+        return true;
+    }
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         System.exit(0);
@@ -179,22 +245,136 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void rdUsersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdUsersActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_rdUsersActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void rdAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_rdAdminActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void rdSuppliersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdSuppliersActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_rdSuppliersActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        if (isEmpty()) {
+            String email = jTextField1.getText();
+            String password = String.valueOf(jPasswordField1.getPassword());
+            
+            //AdminS
+            if (rdAdmin.isSelected()) {
+                try {
+                    Connection con = MyConnections.getConnection();
+                    PreparedStatement ps;
+                    ps = con.prepareStatement("select * from admin where email =? and password = ?");
+                    ps.setString(1, email);
+                    ps.setString(2, password);
+                    ResultSet rs = ps.executeQuery();
+                    if (rs.next()) {
+                        AdminDashboard ad = new AdminDashboard();
+                        ad.setVisible(true);
+                        AdminDashboard.adminEmail.setText(email);
+                        ad.pack();
+                        this.dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Incorrect email or password", "Login failed", 2);
+
+                    }
+                } catch (SQLException ex) {
+                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            } 
+            //user
+            else if (rdUsers.isSelected()){
+                try {
+                    Connection con = MyConnections.getConnection();
+                    PreparedStatement ps;
+                    ps = con.prepareStatement("select * from user where uemail =? and upassword = ?");
+                    ps.setString(1, email);
+                    ps.setString(2, password);
+                    ResultSet rs = ps.executeQuery();
+                    if (rs.next()) {
+                        UserDashboard ud = new UserDashboard();
+                        ud.setVisible(true);
+                        UserDashboard.userEmail.setText(email);
+                        ud.pack();
+                        this.dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Incorrect email or password", "Login failed", 2);
+
+                    }
+                } catch (SQLException ex) {
+                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+                }               
+                
+            }
+            //suppliers
+            else if (rdSuppliers.isSelected()){
+                try {
+                    Connection con = MyConnections.getConnection();
+                    PreparedStatement ps;
+                    ps = con.prepareStatement("select * from supplier where semail =? and spassword = ?");
+                    ps.setString(1, email);
+                    ps.setString(2, password);
+                    ResultSet rs = ps.executeQuery();
+                    if (rs.next()) {
+                        SupplierDashboard sd = new SupplierDashboard();
+                        sd.setVisible(true);
+                        SupplierDashboard.supplierEmail.setText(email);
+                        sd.pack();
+                        this.dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Incorrect email or password", "Login failed", 2);
+
+                    }
+                } catch (SQLException ex) {
+                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+                }               
+                
+            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        for (double i = 0.1; i <= 1.0; i += 0.1) {
+            String s = "" + i;
+            float f = Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(40);
+
+            } catch (InterruptedException ex) {
+//                Logger.getLogger(AdminDashboard.class.getName()).log(Level.SEVERE, null, ex);
+
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        new SignUp().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        new ForgotPassword().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel11MouseClicked
+    //password field
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        jPasswordField1.setEchoChar((char) 0);
+        jLabel8.setVisible(false);
+        jLabel13.setVisible(true);
+
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        jPasswordField1.setEchoChar('*');
+        jLabel8.setVisible(true);
+        jLabel13.setVisible(false);
+    }//GEN-LAST:event_jLabel13MouseClicked
+    //end pasword field
     /**
      * @param args the command line arguments
      */
@@ -236,6 +416,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -247,9 +428,9 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JRadioButton rdAdmin;
+    private javax.swing.JRadioButton rdSuppliers;
+    private javax.swing.JRadioButton rdUsers;
     // End of variables declaration//GEN-END:variables
 }

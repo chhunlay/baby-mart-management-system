@@ -87,6 +87,11 @@ public class ForgotPassword extends javax.swing.JFrame {
         btnBack.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
         btnBack.setForeground(new java.awt.Color(153, 153, 255));
         btnBack.setText("Back");
+        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 140, 40));
 
         btnSave.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
@@ -135,6 +140,11 @@ public class ForgotPassword extends javax.swing.JFrame {
     private void txtPassword1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassword1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPassword1ActionPerformed
+
+    private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBackMouseClicked
 
     /**
      * @param args the command line arguments

@@ -30,7 +30,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        adminEmail = new javax.swing.JLabel();
         jpMenuBar = new javax.swing.JPanel();
         jpDashBoard = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -103,10 +103,10 @@ public class AdminDashboard extends javax.swing.JFrame {
         });
         jpTItleBar.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 0, 100, 80));
 
-        jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_light.png"))); // NOI18N
-        jLabel10.setText("exmple@gmail.com");
-        jpTItleBar.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 220, 80));
+        adminEmail.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        adminEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_light.png"))); // NOI18N
+        adminEmail.setText("exmple@gmail.com");
+        jpTItleBar.add(adminEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 220, 80));
 
         getContentPane().add(jpTItleBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 80));
 
@@ -544,7 +544,8 @@ public class AdminDashboard extends javax.swing.JFrame {
 //        jLabel38.setVisible(false);
     }  
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-//        int a = JOptionPane.showConfirmDialog(this , "Do you want to log out now?","Logout")
+        new Login().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
@@ -613,8 +614,8 @@ public class AdminDashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JLabel adminEmail;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;

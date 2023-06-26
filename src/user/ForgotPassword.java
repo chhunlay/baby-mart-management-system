@@ -44,7 +44,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
@@ -56,22 +56,18 @@ public class ForgotPassword extends javax.swing.JFrame {
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Forgot Password");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 250, 50));
 
         jLabel4.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("New Password");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 160, -1));
 
         jLabel5.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Email");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 80, -1));
 
         jLabel6.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Phone");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 90, -1));
 
@@ -97,8 +93,8 @@ public class ForgotPassword extends javax.swing.JFrame {
         txtPhone.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
         jPanel1.add(txtPhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 310, -1));
 
+        btnBack.setBackground(new java.awt.Color(204, 204, 204));
         btnBack.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(153, 153, 255));
         btnBack.setText("Back");
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -107,13 +103,12 @@ public class ForgotPassword extends javax.swing.JFrame {
         });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 140, 40));
 
+        btnSave.setBackground(new java.awt.Color(204, 204, 204));
         btnSave.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
-        btnSave.setForeground(new java.awt.Color(153, 153, 255));
         btnSave.setText("Save");
         jPanel1.add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 140, 40));
 
         jLabel7.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Confirm Password");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 160, -1));
 

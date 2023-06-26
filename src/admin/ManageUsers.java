@@ -64,11 +64,10 @@ public class ManageUsers extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel6.setBackground(new java.awt.Color(204, 204, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel36.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setText("Password");
         jPanel6.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 120, 24));
 
@@ -76,12 +75,10 @@ public class ManageUsers extends javax.swing.JFrame {
         jPanel6.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 280, -1));
 
         jLabel37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setText("ID");
         jPanel6.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 24));
 
         jLabel38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setText("Username");
         jPanel6.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 120, 24));
 
@@ -92,7 +89,6 @@ public class ManageUsers extends javax.swing.JFrame {
         jPanel6.add(jTextField39, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 280, -1));
 
         jLabel39.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("Email");
         jPanel6.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 120, 24));
 
@@ -100,22 +96,20 @@ public class ManageUsers extends javax.swing.JFrame {
         jPanel6.add(jTextField40, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 280, -1));
 
         jLabel40.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
         jLabel40.setText("Phone");
         jPanel6.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 120, 24));
 
+        jButton16.setBackground(new java.awt.Color(204, 204, 204));
         jButton16.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(153, 153, 255));
         jButton16.setText("CLEAR");
         jPanel6.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 280, 50));
 
+        jButton17.setBackground(new java.awt.Color(204, 204, 204));
         jButton17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(153, 153, 255));
         jButton17.setText("UPDATE");
         jPanel6.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 340, 130, 50));
 
         jLabel43.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("Address");
         jPanel6.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 240, 250, 24));
 
@@ -123,7 +117,6 @@ public class ManageUsers extends javax.swing.JFrame {
         jPanel6.add(jTextField43, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 280, -1));
 
         jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Gender");
         jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 80, -1));
 
@@ -131,6 +124,7 @@ public class ManageUsers extends javax.swing.JFrame {
         cbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         jPanel6.add(cbGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 280, -1));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
@@ -162,8 +156,8 @@ public class ManageUsers extends javax.swing.JFrame {
 
         jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, 630, 180));
 
+        jButton18.setBackground(new java.awt.Color(204, 204, 204));
         jButton18.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(153, 153, 255));
         jButton18.setText("DELETE");
         jPanel6.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, 130, 50));
 
@@ -180,7 +174,6 @@ public class ManageUsers extends javax.swing.JFrame {
         jPanel6.add(jTextField44, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 520, 280, -1));
 
         jLabel44.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("SEARCH");
         jPanel6.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 250, 40));
 

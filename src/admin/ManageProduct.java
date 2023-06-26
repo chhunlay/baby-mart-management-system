@@ -63,7 +63,7 @@ public class ManageProduct extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel5.setBackground(new java.awt.Color(204, 204, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
@@ -84,10 +84,9 @@ public class ManageProduct extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(jTable4);
 
-        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 580, 490));
+        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 580, 530));
 
         jLabel13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("SEARCH");
         jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 100, 40));
 
@@ -98,63 +97,55 @@ public class ManageProduct extends javax.swing.JFrame {
         jPanel5.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 290, -1));
 
         jLabel14.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Product ID");
         jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 120, 24));
 
         jLabel15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Product Name");
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 160, 24));
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 160, 24));
 
         jTextField15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jPanel5.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 290, -1));
+        jPanel5.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 290, -1));
 
         jLabel16.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Category ");
-        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 120, 24));
+        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 120, 24));
 
         jButton19.setBackground(new java.awt.Color(204, 204, 204));
         jButton19.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(153, 153, 255));
         jButton19.setText("UPDATE");
-        jPanel5.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 550, 140, 40));
+        jPanel5.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 590, 140, 40));
 
         jButton20.setBackground(new java.awt.Color(204, 204, 204));
         jButton20.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(153, 153, 255));
         jButton20.setText("DELETE");
-        jPanel5.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 610, 130, 40));
+        jPanel5.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 650, 130, 40));
 
         jButton21.setBackground(new java.awt.Color(204, 204, 204));
         jButton21.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton21.setForeground(new java.awt.Color(153, 153, 255));
         jButton21.setText("CLEAR");
-        jPanel5.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, 140, 40));
+        jPanel5.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 650, 140, 40));
 
         jButton22.setBackground(new java.awt.Color(204, 204, 204));
         jButton22.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton22.setForeground(new java.awt.Color(153, 153, 255));
         jButton22.setText("SAVE");
-        jPanel5.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, 130, 40));
+        jPanel5.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 590, 130, 40));
 
         jTextField17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jPanel5.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 290, -1));
+        jPanel5.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 290, -1));
 
         jLabel17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Quantity");
-        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 120, 24));
+        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 120, 24));
 
         jLabel18.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Price");
-        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 120, 24));
+        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 120, 24));
 
         jTextField18.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jPanel5.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, 290, -1));
+        jPanel5.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 290, -1));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
@@ -173,9 +164,9 @@ public class ManageProduct extends javax.swing.JFrame {
 
         jComboBox1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel5.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 290, -1));
+        jPanel5.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 290, -1));
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 700));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 730));
 
         pack();
         setLocationRelativeTo(null);

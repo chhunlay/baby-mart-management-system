@@ -52,17 +52,14 @@ public class AdminDashboard extends javax.swing.JFrame {
         jpIsSelected1 = new javax.swing.JPanel();
         jpManageSuppliers = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jpIsSelected2 = new javax.swing.JPanel();
         jpTransactions1 = new javax.swing.JPanel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jpIsSelected6 = new javax.swing.JPanel();
+        jLabel36 = new javax.swing.JLabel();
         jpSelectSuppliers = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jpIsSelected5 = new javax.swing.JPanel();
         jpStatisticBoard = new javax.swing.JPanel();
@@ -277,12 +274,8 @@ public class AdminDashboard extends javax.swing.JFrame {
         jpManageSuppliers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel23.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit_supplier_dark.png"))); // NOI18N
         jpManageSuppliers.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
-
-        jLabel29.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
-        jpManageSuppliers.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
 
         jLabel30.setBackground(new java.awt.Color(153, 153, 153));
         jLabel30.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
@@ -316,14 +309,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         jpTransactions1.setBackground(new java.awt.Color(51, 51, 51));
         jpTransactions1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel36.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/transaction_dark.png"))); // NOI18N
-        jpTransactions1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
-
-        jLabel37.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
-        jpTransactions1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
-
         jLabel38.setBackground(new java.awt.Color(153, 153, 153));
         jLabel38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(153, 153, 153));
@@ -351,18 +336,19 @@ public class AdminDashboard extends javax.swing.JFrame {
 
         jpTransactions1.add(jpIsSelected6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 40));
 
+        jLabel36.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/transaction_dark.png"))); // NOI18N
+        jpTransactions1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
+
         jpMenuBar.add(jpTransactions1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 430, 290, 40));
 
         jpSelectSuppliers.setBackground(new java.awt.Color(51, 51, 51));
         jpSelectSuppliers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel31.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/transaction_dark.png"))); // NOI18N
-        jpSelectSuppliers.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
-
-        jLabel33.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/account_dark.png"))); // NOI18N
-        jpSelectSuppliers.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, 40));
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/selection_outline.png"))); // NOI18N
+        jLabel31.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jpSelectSuppliers.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 30, 40));
 
         jLabel34.setBackground(new java.awt.Color(153, 153, 153));
         jLabel34.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
@@ -629,16 +615,13 @@ public class AdminDashboard extends javax.swing.JFrame {
     public static javax.swing.JLabel jLabel25;
     public static javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel28;
-    public static javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     public static javax.swing.JLabel jLabel30;
     public static javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    public static javax.swing.JLabel jLabel33;
     public static javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     public static javax.swing.JLabel jLabel36;
-    public static javax.swing.JLabel jLabel37;
     public static javax.swing.JLabel jLabel38;
     public static javax.swing.JLabel jLabel5;
     public static javax.swing.JLabel jLabel6;

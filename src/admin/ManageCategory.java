@@ -54,7 +54,7 @@ public class ManageCategory extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel5.setBackground(new java.awt.Color(204, 204, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
@@ -78,7 +78,6 @@ public class ManageCategory extends javax.swing.JFrame {
         jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 580, 490));
 
         jLabel13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("SEARCH");
         jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 100, 40));
 
@@ -89,12 +88,10 @@ public class ManageCategory extends javax.swing.JFrame {
         jPanel5.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 290, -1));
 
         jLabel14.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Category ID");
         jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 120, 24));
 
         jLabel15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Category Name");
         jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 160, 24));
 
@@ -103,25 +100,21 @@ public class ManageCategory extends javax.swing.JFrame {
 
         jButton19.setBackground(new java.awt.Color(204, 204, 204));
         jButton19.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(153, 153, 255));
         jButton19.setText("UPDATE");
         jPanel5.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 140, 40));
 
         jButton20.setBackground(new java.awt.Color(204, 204, 204));
         jButton20.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(153, 153, 255));
         jButton20.setText("DELETE");
         jPanel5.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 130, 40));
 
         jButton21.setBackground(new java.awt.Color(204, 204, 204));
         jButton21.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton21.setForeground(new java.awt.Color(153, 153, 255));
         jButton21.setText("CLEAR");
         jPanel5.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, 140, 40));
 
         jButton22.setBackground(new java.awt.Color(204, 204, 204));
         jButton22.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton22.setForeground(new java.awt.Color(153, 153, 255));
         jButton22.setText("SAVE");
         jPanel5.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 130, 40));
 
@@ -129,10 +122,10 @@ public class ManageCategory extends javax.swing.JFrame {
         jPanel5.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 290, -1));
 
         jLabel17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Description");
         jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 120, 24));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N

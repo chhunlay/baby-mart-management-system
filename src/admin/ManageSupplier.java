@@ -62,11 +62,10 @@ public class ManageSupplier extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel36.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setText("Password");
         jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 120, 24));
 
@@ -74,12 +73,10 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPanel1.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 280, -1));
 
         jLabel37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setText("Supplier ID");
         jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 120, 24));
 
         jLabel38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setText("Supplier Name");
         jPanel1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 190, 24));
 
@@ -90,7 +87,6 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPanel1.add(jTextField39, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 210, 280, -1));
 
         jLabel39.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("Email");
         jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, 120, 24));
 
@@ -98,7 +94,6 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPanel1.add(jTextField40, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 280, -1));
 
         jLabel40.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
         jLabel40.setText("Phone");
         jPanel1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 120, 24));
 
@@ -113,7 +108,6 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 130, 50));
 
         jLabel43.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("Address");
         jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 260, 250, 24));
 
@@ -121,7 +115,6 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPanel1.add(jTextField43, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 280, -1));
 
         jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Gender");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 80, -1));
 
@@ -162,13 +155,13 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPanel1.add(jTextField44, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 540, 280, -1));
 
         jLabel44.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("SEARCH");
         jPanel1.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 540, 250, 40));
 
         jPasswordField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 280, 40));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
@@ -200,7 +193,7 @@ public class ManageSupplier extends javax.swing.JFrame {
         AdminDashboard.jpManageSuppliers.setBackground(bgColor);
         AdminDashboard.jpIsSelected2.setBackground(bgColor);
         AdminDashboard.jLabel30.setForeground(textPrimaryColor);
-        AdminDashboard.jLabel23.setVisible(true);
+        AdminDashboard.jLabel31.setVisible(true);
     }//GEN-LAST:event_jLabel2MouseClicked
 
     /**

@@ -63,24 +63,21 @@ public class UserAccount extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel6.setBackground(new java.awt.Color(204, 204, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel36.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setText("Password");
-        jPanel6.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 120, 24));
+        jPanel6.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 120, 24));
 
         txtID.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel6.add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 280, -1));
 
         jLabel37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setText("ID");
         jPanel6.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 120, 24));
 
         jLabel38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setText("Username");
         jPanel6.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 120, 24));
 
@@ -91,7 +88,6 @@ public class UserAccount extends javax.swing.JFrame {
         jPanel6.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 280, -1));
 
         jLabel39.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("Email");
         jPanel6.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 120, 24));
 
@@ -99,22 +95,20 @@ public class UserAccount extends javax.swing.JFrame {
         jPanel6.add(txtPhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 280, -1));
 
         jLabel40.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
         jLabel40.setText("Phone");
         jPanel6.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 120, 24));
 
+        btnUpdate.setBackground(new java.awt.Color(204, 204, 204));
         btnUpdate.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        btnUpdate.setForeground(new java.awt.Color(153, 153, 255));
         btnUpdate.setText("UPDATE");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
-        jPanel6.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 130, 40));
+        jPanel6.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, 130, 40));
 
         jLabel43.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("Address");
         jPanel6.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 250, 24));
 
@@ -122,10 +116,10 @@ public class UserAccount extends javax.swing.JFrame {
         jPanel6.add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 280, -1));
 
         jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Gender");
         jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 80, -1));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
@@ -142,13 +136,13 @@ public class UserAccount extends javax.swing.JFrame {
 
         jPanel6.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 50));
 
+        btnDelete.setBackground(new java.awt.Color(204, 204, 204));
         btnDelete.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(153, 153, 255));
         btnDelete.setText("DELETE");
-        jPanel6.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 360, 130, 40));
+        jPanel6.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, 130, 40));
 
         txtPassword.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jPanel6.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 280, 40));
+        jPanel6.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 280, 40));
 
         txtUsername.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel6.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 280, -1));
@@ -164,7 +158,7 @@ public class UserAccount extends javax.swing.JFrame {
                 lblHideKeyPressed(evt);
             }
         });
-        jPanel6.add(lblHide, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 30, 60));
+        jPanel6.add(lblHide, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 30, 60));
 
         lblVisible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visible.png"))); // NOI18N
         lblVisible.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -177,7 +171,7 @@ public class UserAccount extends javax.swing.JFrame {
                 lblVisibleKeyPressed(evt);
             }
         });
-        jPanel6.add(lblVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 30, 60));
+        jPanel6.add(lblVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 30, 60));
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 730, 450));
 

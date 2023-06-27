@@ -38,8 +38,8 @@ public class ManageProduct extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel5 = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTable4 = new javax.swing.JTable();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel13 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
@@ -66,25 +66,38 @@ public class ManageProduct extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(204, 204, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {"1001", "Fisher-Price Stacking ", "Baby toys	 ", "5", "$10.00"},
+                {"1002", "Emoin Dancing Cactus ", "Baby toys	 ", "11", "$12.00"},
+                {"1003", "Fisher-Price Baby Crawling ", "Baby toys	 ", "3", "$8.00"},
+                {"1004", "AiTuiTui Sensory Montessori ", "Baby toys	 ", "6", "$12.00"},
+                {"1005", "Bright Starts Oball Shaker Rattle ", "Baby toys	 ", "2", "$5.00"},
+                {"1006", "VTech Baby Lil' Critters Moosical Beads ", "Baby toys	 ", "9", "$15.00"},
+                {"1007", "Itzy Ritzy - Itzy Lovey Including Teether ", "Baby toys	 ", "2", "$13.00"},
+                {"1008", "Cetaphil Baby Wash & Shampoo Plus Body Lotion ", "Baby skin care	 ", "5", "$16.00"},
+                {"1009", "Baby Dove Sensitive Skin Care ", "Baby skin care	 ", "2", "$9.00"},
+                {"1010", "Cetaphil Baby Eczema Soothing Lotion with Colloidal Oatmeal ", "Baby skin care	 ", "4", "$10.00"},
+                {"1011", "Johnson's Baby Tear Free Gentle ", "Baby skin care	 ", "8", "$6.00"},
+                {"1012", "Johnson's Moisturizing Mild Pink ", "Baby skin care	 ", "6", "$5.00"},
+                {"1013", "Hiccapop OmniBoost Travel Booster Seat with Tray ", "Baby gears", "5", "$40.00"},
+                {"1014", "Polarized Baby Sunglasses With Strap ", "Baby gears", "12", "$15.00"},
+                {"1015", "Beberoad Love 2- in-1 Mosquito Net ", "Baby gears", "5", "$18.00"},
+                {"1016", "Boon Nursh Stage 2 ", "Baby gears", "7", "$21.00"},
+                {"1017", "Tommee Tippee Advanced Anti-Colic Baby Bottle ", "Baby gears", "3", "$12.00"},
+                {"1018", "Pediasure Vanilla Delight ", "Baby foods	 ", "12", "$22.00"},
+                {"1019", "Sprout Organic Creamy Vegetable & Chicken ", "Baby foods	 ", "7", "$4.00"},
+                {"1020", "Organic Peanut Egg Milk ", "Baby foods	 ", "9", "$40.00"},
+                {"1021", "EleCare Hypoallergenic Formula ", "Baby foods	 ", "6", "$41.00"}
             },
             new String [] {
                 "Product ID", "Product Name", "Category", "Quantity", "Price"
             }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, true, true
-            };
+        ));
+        jTable1.setShowGrid(false);
+        jScrollPane1.setViewportView(jTable1);
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jScrollPane4.setViewportView(jTable4);
-
-        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 580, 530));
+        jPanel5.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 157, 580, 530));
 
         jLabel13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel13.setText("SEARCH");
@@ -93,6 +106,7 @@ public class ManageProduct extends javax.swing.JFrame {
         jTextField13.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jPanel5.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 100, 280, -1));
 
+        jTextField14.setBackground(new java.awt.Color(204, 204, 204));
         jTextField14.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel5.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 290, -1));
 
@@ -149,7 +163,7 @@ public class ManageProduct extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
-        jLabel3.setText("PRODUCT MAGEMENT");
+        jLabel3.setText("PRODUCTS MAGEMENT");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 340, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
@@ -163,7 +177,7 @@ public class ManageProduct extends javax.swing.JFrame {
         jPanel5.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 50));
 
         jComboBox1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Baby toys\t", "Baby skin care\t", "Baby gear\t", "Baby foods\t", " " }));
         jPanel5.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 290, -1));
 
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 730));
@@ -236,8 +250,8 @@ public class ManageProduct extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTable jTable4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;

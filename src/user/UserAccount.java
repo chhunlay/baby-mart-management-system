@@ -48,7 +48,6 @@ public class UserAccount extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         btnDelete = new javax.swing.JButton();
         txtPassword = new javax.swing.JPasswordField();
         txtUsername = new javax.swing.JTextField();
@@ -126,19 +125,11 @@ public class UserAccount extends javax.swing.JFrame {
         jLabel3.setText("USER ACCOUNT");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 230, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
-            }
-        });
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 40, 50));
-
         jPanel6.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 50));
 
         btnDelete.setBackground(new java.awt.Color(204, 204, 204));
         btnDelete.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        btnDelete.setText("DELETE");
+        btnDelete.setText("BACK");
         jPanel6.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, 130, 40));
 
         txtPassword.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -248,15 +239,6 @@ public class UserAccount extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_formWindowOpened
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-        setVisible(false);
-        UserDashboard.jpMyAccount.setBackground(bgColor);
-        UserDashboard.jpIsSelected10.setBackground(bgColor);
-        UserDashboard.jLabel28.setForeground(textPrimaryColor);
-        UserDashboard.jLabel11.setVisible(true);
-
-    }//GEN-LAST:event_jLabel1MouseClicked
-
     private void lblHideMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHideMouseClicked
         // TODO add your handling code here:
         txtPassword.setEchoChar((char) 0);
@@ -361,7 +343,6 @@ public class UserAccount extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnUpdate;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel36;

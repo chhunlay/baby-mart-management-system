@@ -11,13 +11,13 @@ import java.util.logging.Logger;
  *
  * @author ADMIN
  */
-public class SupplierAccount extends javax.swing.JFrame {
+public class EmployeesAccount extends javax.swing.JFrame {
 
     Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
     Color bgColor = new Color(51, 51, 51);
     
-    public SupplierAccount() {
+    public EmployeesAccount() {
         initComponents();
     }
 
@@ -71,11 +71,11 @@ public class SupplierAccount extends javax.swing.JFrame {
         jPanel6.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 280, -1));
 
         jLabel37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel37.setText("Supplier ID");
+        jLabel37.setText("Employee ID");
         jPanel6.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 24));
 
         jLabel38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel38.setText("Supplier Name");
+        jLabel38.setText("Employee Name");
         jPanel6.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 190, 24));
 
         jTextField38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -109,7 +109,7 @@ public class SupplierAccount extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel10.setText("Gender");
-        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 80, -1));
+        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 238, 80, 30));
 
         cbGender.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         cbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
@@ -119,8 +119,8 @@ public class SupplierAccount extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
-        jLabel3.setText("SUPPLIERS ACCOUNT");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 310, 50));
+        jLabel3.setText("EMPLOYEES ACCOUNT");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 360, 50));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
         jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -134,7 +134,7 @@ public class SupplierAccount extends javax.swing.JFrame {
 
         jButton18.setBackground(new java.awt.Color(204, 204, 204));
         jButton18.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton18.setText("DELETE");
+        jButton18.setText("BACK");
         jPanel6.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 130, 40));
 
         jPasswordField1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -162,10 +162,10 @@ public class SupplierAccount extends javax.swing.JFrame {
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
         setVisible(false);
-        SupplierDashboard.jpMyAccount.setBackground(bgColor);
-        SupplierDashboard.jpIsSelected10.setBackground(bgColor);
-        SupplierDashboard.jLabel28.setForeground(textPrimaryColor);
-        SupplierDashboard.jLabel11.setVisible(true);
+        EmployeesDashboard.jpMyAccount.setBackground(bgColor);
+        EmployeesDashboard.jpIsSelected10.setBackground(bgColor);
+        EmployeesDashboard.jLabel28.setForeground(textPrimaryColor);
+        EmployeesDashboard.jLabel11.setVisible(true);
     }//GEN-LAST:event_jLabel11MouseClicked
 
     /**
@@ -185,21 +185,23 @@ public class SupplierAccount extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SupplierAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SupplierAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SupplierAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SupplierAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesAccount.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SupplierAccount().setVisible(true);
+                new EmployeesAccount().setVisible(true);
             }
         });
     }

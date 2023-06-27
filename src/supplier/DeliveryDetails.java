@@ -2,10 +2,10 @@
 package supplier;
 
 import java.awt.Color;
-import static supplier.SupplierDashboard.jLabel26;
-import static supplier.SupplierDashboard.jLabel7;
-import static supplier.SupplierDashboard.jpDeliver;
-import static supplier.SupplierDashboard.jpIsSelected8;
+import static supplier.EmployeesDashboard.jLabel26;
+import static supplier.EmployeesDashboard.jLabel7;
+import static supplier.EmployeesDashboard.jpDeliver;
+import static supplier.EmployeesDashboard.jpIsSelected8;
 
 /**
  *
@@ -114,10 +114,10 @@ public class DeliveryDetails extends javax.swing.JFrame {
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
         setVisible(false);
-        SupplierDashboard.jpDeliver.setBackground(bgColor);
-        SupplierDashboard.jpIsSelected8.setBackground(bgColor);
-        SupplierDashboard.jLabel26.setForeground(textPrimaryColor);
-        SupplierDashboard.jLabel7.setVisible(true);
+        EmployeesDashboard.jpDeliver.setBackground(bgColor);
+        EmployeesDashboard.jpIsSelected8.setBackground(bgColor);
+        EmployeesDashboard.jLabel26.setForeground(textPrimaryColor);
+        EmployeesDashboard.jLabel7.setVisible(true);
     }//GEN-LAST:event_jLabel11MouseClicked
 
     /**

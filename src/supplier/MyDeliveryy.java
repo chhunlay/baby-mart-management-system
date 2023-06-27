@@ -3,10 +3,10 @@ package supplier;
 
 import admin.AdminDashboard;
 import java.awt.Color;
-import static supplier.SupplierDashboard.jLabel27;
-import static supplier.SupplierDashboard.jLabel8;
-import static supplier.SupplierDashboard.jpIsSelected9;
-import static supplier.SupplierDashboard.jpMyDelivery;
+import static supplier.EmployeesDashboard.jLabel27;
+import static supplier.EmployeesDashboard.jLabel8;
+import static supplier.EmployeesDashboard.jpIsSelected9;
+import static supplier.EmployeesDashboard.jpMyDelivery;
 
 
 /**
@@ -107,10 +107,10 @@ public class MyDeliveryy extends javax.swing.JFrame {
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
         setVisible(false);
-        SupplierDashboard.jpMyDelivery.setBackground(bgColor);
-        SupplierDashboard.jpIsSelected9.setBackground(bgColor);
-        SupplierDashboard.jLabel27.setForeground(textPrimaryColor);
-        SupplierDashboard.jLabel8.setVisible(true);
+        EmployeesDashboard.jpMyDelivery.setBackground(bgColor);
+        EmployeesDashboard.jpIsSelected9.setBackground(bgColor);
+        EmployeesDashboard.jLabel27.setForeground(textPrimaryColor);
+        EmployeesDashboard.jLabel8.setVisible(true);
     }//GEN-LAST:event_jLabel11MouseClicked
 
     /**

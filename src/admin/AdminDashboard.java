@@ -244,13 +244,13 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel25.setBackground(new java.awt.Color(153, 153, 153));
         jLabel25.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel25.setText("Add Suppliers");
+        jLabel25.setText("Add Employees");
         jLabel25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel25MouseClicked(evt);
             }
         });
-        jpAddSuppliers.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 140, 40));
+        jpAddSuppliers.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 170, 40));
 
         jpIsSelected1.setBackground(new java.awt.Color(51, 51, 51));
         jpIsSelected1.setForeground(new java.awt.Color(255, 255, 255));
@@ -280,7 +280,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel30.setBackground(new java.awt.Color(153, 153, 153));
         jLabel30.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel30.setText("Manage Suppliers");
+        jLabel30.setText("Manage Employees");
         jLabel30.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel30MouseClicked(evt);
@@ -353,7 +353,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel34.setBackground(new java.awt.Color(153, 153, 153));
         jLabel34.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel34.setText("Select Suppliers");
+        jLabel34.setText("Select Employees");
         jLabel34.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel34MouseClicked(evt);
@@ -397,19 +397,19 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel15.setBackground(new java.awt.Color(51, 51, 51));
         jLabel15.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel15.setText("Total Categories:  0");
+        jLabel15.setText("Total Categories:  4.0");
         jpStatisticBoard.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 220, -1));
 
         jLabel16.setBackground(new java.awt.Color(51, 51, 51));
         jLabel16.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel16.setText("Total Products:  0");
+        jLabel16.setText("Total Products:  21.0");
         jpStatisticBoard.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 200, -1));
 
         jLabel28.setBackground(new java.awt.Color(51, 51, 51));
         jLabel28.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel28.setText("Total Users: 0");
+        jLabel28.setText("Total Users: 3.0");
         jpStatisticBoard.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 220, -1));
 
         jLabel32.setBackground(new java.awt.Color(51, 51, 51));
@@ -421,7 +421,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel35.setBackground(new java.awt.Color(51, 51, 51));
         jLabel35.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel35.setText("Total Suppliers: 0");
+        jLabel35.setText("Total Employees: 4.0");
         jpStatisticBoard.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 200, -1));
 
         getContentPane().add(jpStatisticBoard, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 1180, 180));
@@ -475,7 +475,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel25.setForeground(textSelectionColor);
         jLabel18.setVisible(true);
         
-        AddSupplier addSuppliers = new AddSupplier();
+        AddEmployees addSuppliers = new AddEmployees();
         addSuppliers.setVisible(true);
         addSuppliers.pack();
     }//GEN-LAST:event_jLabel25MouseClicked
@@ -487,7 +487,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel30.setForeground(textSelectionColor);
         jLabel23.setVisible(true);
         
-        ManageSupplier manageSuppliers = new ManageSupplier();
+        ManageEmployees manageSuppliers = new ManageEmployees();
         manageSuppliers.setVisible(true);
         manageSuppliers.pack();
     }//GEN-LAST:event_jLabel30MouseClicked
@@ -499,7 +499,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel34.setForeground(textSelectionColor);
         jLabel31.setVisible(true);
         
-        SelectSupplier selectSuppliers = new SelectSupplier();
+        SelectEmployees selectSuppliers = new SelectEmployees();
         selectSuppliers.setVisible(true);
         selectSuppliers.pack();
     }//GEN-LAST:event_jLabel34MouseClicked

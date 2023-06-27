@@ -13,13 +13,13 @@ import java.awt.Color;
  *
  * @author ADMIN
  */
-public class ManageSupplier extends javax.swing.JFrame {
+public class ManageEmployees extends javax.swing.JFrame {
 
     Color textPrimaryColor = new Color(153, 153, 153);
     Color primaryColor = new Color(42, 58, 73);
     Color bgColor = new Color(51, 51, 51);
     
-    public ManageSupplier() {
+    public ManageEmployees() {
         initComponents();
     }
 
@@ -69,15 +69,16 @@ public class ManageSupplier extends javax.swing.JFrame {
         jLabel36.setText("Password");
         jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 120, 24));
 
+        jTextField37.setBackground(new java.awt.Color(204, 204, 204));
         jTextField37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel1.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 280, -1));
 
         jLabel37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel37.setText("Supplier ID");
+        jLabel37.setText("Employee ID");
         jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 120, 24));
 
         jLabel38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel38.setText("Supplier Name");
+        jLabel38.setText("Emplooyee Name");
         jPanel1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 190, 24));
 
         jTextField38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -90,6 +91,7 @@ public class ManageSupplier extends javax.swing.JFrame {
         jLabel39.setText("Email");
         jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, 120, 24));
 
+        jTextField40.setBackground(new java.awt.Color(204, 204, 204));
         jTextField40.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel1.add(jTextField40, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 280, -1));
 
@@ -97,13 +99,13 @@ public class ManageSupplier extends javax.swing.JFrame {
         jLabel40.setText("Phone");
         jPanel1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 120, 24));
 
+        jButton16.setBackground(new java.awt.Color(204, 204, 204));
         jButton16.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(153, 153, 255));
         jButton16.setText("CLEAR");
         jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, 280, 50));
 
+        jButton17.setBackground(new java.awt.Color(204, 204, 204));
         jButton17.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(153, 153, 255));
         jButton17.setText("UPDATE");
         jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 130, 50));
 
@@ -116,7 +118,7 @@ public class ManageSupplier extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jLabel10.setText("Gender");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 80, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 258, 80, 30));
 
         cbGender.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         cbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
@@ -130,15 +132,15 @@ public class ManageSupplier extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Supplier ID", "Supplier Name", "Gender", "Phone", "Email", "Password", "Address"
+                "Employee ID", "Employee Name", "Gender", "Phone", "Email", "Password", "Address"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, 690, 180));
 
+        jButton18.setBackground(new java.awt.Color(204, 204, 204));
         jButton18.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 24)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(153, 153, 255));
         jButton18.setText("DELETE");
         jPanel1.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 360, 130, 50));
 
@@ -165,7 +167,7 @@ public class ManageSupplier extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 36)); // NOI18N
-        jLabel3.setText("SUPPLIERS MANAGEMENT");
+        jLabel3.setText("EMPLOYEES MANAGEMENT");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 400, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit_button.png"))); // NOI18N
@@ -213,20 +215,21 @@ public class ManageSupplier extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ManageSupplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageEmployees.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ManageSupplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageEmployees.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ManageSupplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageEmployees.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ManageSupplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageEmployees.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ManageSupplier().setVisible(true);
+                new ManageEmployees().setVisible(true);
             }
         });
     }

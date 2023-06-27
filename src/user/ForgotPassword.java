@@ -144,12 +144,12 @@ public class ForgotPassword extends javax.swing.JFrame {
 
     private void init(){
         txtPhone.setBackground(notEdit);
-        txtPhone.setEditable(false);
+//        txtPhone.setEditable(false);
         
-        txtPassword1.setBackground(notEdit);
+//        txtPassword1.setBackground(notEdit);
         txtPassword1.setEditable(false);
         
-        txtConfirmPassword.setBackground(notEdit);
+//        txtConfirmPassword.setBackground(notEdit);
         txtConfirmPassword.setEditable(false);
         
         //set for button

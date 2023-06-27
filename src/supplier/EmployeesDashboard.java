@@ -8,13 +8,13 @@ import user.Login;
  *
  * @author ADMIN
  */
-public class SupplierDashboard extends javax.swing.JFrame {
+public class EmployeesDashboard extends javax.swing.JFrame {
 
     Color selectionColor = new Color(34, 48, 62);
     Color sideColor = new Color(64, 194, 150);
     Color textSelectionColor = new Color(255, 255, 255);
     
-    public SupplierDashboard() {
+    public EmployeesDashboard() {
         initComponents();
         init();
     }
@@ -281,7 +281,7 @@ public class SupplierDashboard extends javax.swing.JFrame {
         jLabel28.setForeground(textSelectionColor);
         jLabel11.setVisible(true);
 
-        SupplierAccount supplierAccount = new SupplierAccount();
+        EmployeesAccount supplierAccount = new EmployeesAccount();
         supplierAccount.setVisible(true);
         supplierAccount.pack();
     }//GEN-LAST:event_jLabel28MouseClicked
@@ -303,20 +303,21 @@ public class SupplierDashboard extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SupplierDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SupplierDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SupplierDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SupplierDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeesDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SupplierDashboard().setVisible(true);
+                new EmployeesDashboard().setVisible(true);
             }
         });
     }

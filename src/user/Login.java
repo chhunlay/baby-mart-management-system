@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import supplier.SupplierDashboard;
+import supplier.EmployeesDashboard;
 
 /**
  *
@@ -146,7 +146,7 @@ public class Login extends javax.swing.JFrame {
 
         rdSuppliers.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 16)); // NOI18N
         rdSuppliers.setForeground(new java.awt.Color(255, 255, 255));
-        rdSuppliers.setText("Supplier");
+        rdSuppliers.setText("Employee");
         rdSuppliers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rdSuppliersActionPerformed(evt);
@@ -307,9 +307,9 @@ public class Login extends javax.swing.JFrame {
                     ps.setString(2, password);
                     ResultSet rs = ps.executeQuery();
                     if (rs.next()) {
-                        SupplierDashboard sd = new SupplierDashboard();
+                        EmployeesDashboard sd = new EmployeesDashboard();
                         sd.setVisible(true);
-                        SupplierDashboard.supplierEmail.setText(email);
+                        EmployeesDashboard.supplierEmail.setText(email);
                         sd.pack();
                         this.dispose();
                     } else {

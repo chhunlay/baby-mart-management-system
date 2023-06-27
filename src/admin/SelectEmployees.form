@@ -61,11 +61,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Franklin Gothic Medium Cond" size="36" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="SUPPLIER MANAGEMENT"/>
+            <Property name="text" type="java.lang.String" value="EMPLOYEES MANAGEMENT"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="560" y="0" width="410" height="50"/>
+              <AbsoluteConstraints x="540" y="0" width="410" height="50"/>
             </Constraint>
           </Constraints>
         </Component>

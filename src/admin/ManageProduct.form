@@ -41,29 +41,169 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="380" y="160" width="580" height="530"/>
+              <AbsoluteConstraints x="380" y="157" width="580" height="530"/>
             </Constraint>
           </Constraints>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable4">
+            <Component class="javax.swing.JTable" name="jTable1">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="5" rowCount="0">
-                    <Column editable="false" title="Product ID" type="java.lang.Object"/>
-                    <Column editable="false" title="Product Name" type="java.lang.Object"/>
-                    <Column editable="false" title="Category" type="java.lang.Object"/>
-                    <Column editable="true" title="Quantity" type="java.lang.Object"/>
-                    <Column editable="true" title="Price" type="java.lang.Object"/>
+                  <Table columnCount="5" rowCount="21">
+                    <Column editable="true" title="Product ID" type="java.lang.Object">
+                      <Data value="1001"/>
+                      <Data value="1002"/>
+                      <Data value="1003"/>
+                      <Data value="1004"/>
+                      <Data value="1005"/>
+                      <Data value="1006"/>
+                      <Data value="1007"/>
+                      <Data value="1008"/>
+                      <Data value="1009"/>
+                      <Data value="1010"/>
+                      <Data value="1011"/>
+                      <Data value="1012"/>
+                      <Data value="1013"/>
+                      <Data value="1014"/>
+                      <Data value="1015"/>
+                      <Data value="1016"/>
+                      <Data value="1017"/>
+                      <Data value="1018"/>
+                      <Data value="1019"/>
+                      <Data value="1020"/>
+                      <Data value="1021"/>
+                    </Column>
+                    <Column editable="true" title="Product Name" type="java.lang.Object">
+                      <Data value="Fisher-Price Stacking "/>
+                      <Data value="Emoin Dancing Cactus "/>
+                      <Data value="Fisher-Price Baby Crawling "/>
+                      <Data value="AiTuiTui Sensory Montessori "/>
+                      <Data value="Bright Starts Oball Shaker Rattle "/>
+                      <Data value="VTech Baby Lil&apos; Critters Moosical Beads "/>
+                      <Data value="Itzy Ritzy - Itzy Lovey Including Teether "/>
+                      <Data value="Cetaphil Baby Wash &amp; Shampoo Plus Body Lotion "/>
+                      <Data value="Baby Dove Sensitive Skin Care "/>
+                      <Data value="Cetaphil Baby Eczema Soothing Lotion with Colloidal Oatmeal "/>
+                      <Data value="Johnson&apos;s Baby Tear Free Gentle "/>
+                      <Data value="Johnson&apos;s Moisturizing Mild Pink "/>
+                      <Data value="Hiccapop OmniBoost Travel Booster Seat with Tray "/>
+                      <Data value="Polarized Baby Sunglasses With Strap "/>
+                      <Data value="Beberoad Love 2- in-1 Mosquito Net "/>
+                      <Data value="Boon Nursh Stage 2 "/>
+                      <Data value="Tommee Tippee Advanced Anti-Colic Baby Bottle "/>
+                      <Data value="Pediasure Vanilla Delight "/>
+                      <Data value="Sprout Organic Creamy Vegetable &amp; Chicken "/>
+                      <Data value="Organic Peanut Egg Milk "/>
+                      <Data value="EleCare Hypoallergenic Formula "/>
+                    </Column>
+                    <Column editable="true" title="Category" type="java.lang.Object">
+                      <Data value="Baby toys&#x9; "/>
+                      <Data value="Baby toys&#x9; "/>
+                      <Data value="Baby toys&#x9; "/>
+                      <Data value="Baby toys&#x9; "/>
+                      <Data value="Baby toys&#x9; "/>
+                      <Data value="Baby toys&#x9; "/>
+                      <Data value="Baby toys&#x9; "/>
+                      <Data value="Baby skin care&#x9; "/>
+                      <Data value="Baby skin care&#x9; "/>
+                      <Data value="Baby skin care&#x9; "/>
+                      <Data value="Baby skin care&#x9; "/>
+                      <Data value="Baby skin care&#x9; "/>
+                      <Data value="Baby gears"/>
+                      <Data value="Baby gears"/>
+                      <Data value="Baby gears"/>
+                      <Data value="Baby gears"/>
+                      <Data value="Baby gears"/>
+                      <Data value="Baby foods&#x9; "/>
+                      <Data value="Baby foods&#x9; "/>
+                      <Data value="Baby foods&#x9; "/>
+                      <Data value="Baby foods&#x9; "/>
+                    </Column>
+                    <Column editable="true" title="Quantity" type="java.lang.Object">
+                      <Data value="5"/>
+                      <Data value="11"/>
+                      <Data value="3"/>
+                      <Data value="6"/>
+                      <Data value="2"/>
+                      <Data value="9"/>
+                      <Data value="2"/>
+                      <Data value="5"/>
+                      <Data value="2"/>
+                      <Data value="4"/>
+                      <Data value="8"/>
+                      <Data value="6"/>
+                      <Data value="5"/>
+                      <Data value="12"/>
+                      <Data value="5"/>
+                      <Data value="7"/>
+                      <Data value="3"/>
+                      <Data value="12"/>
+                      <Data value="7"/>
+                      <Data value="9"/>
+                      <Data value="6"/>
+                    </Column>
+                    <Column editable="true" title="Price" type="java.lang.Object">
+                      <Data value="$10.00"/>
+                      <Data value="$12.00"/>
+                      <Data value="$8.00"/>
+                      <Data value="$12.00"/>
+                      <Data value="$5.00"/>
+                      <Data value="$15.00"/>
+                      <Data value="$13.00"/>
+                      <Data value="$16.00"/>
+                      <Data value="$9.00"/>
+                      <Data value="$10.00"/>
+                      <Data value="$6.00"/>
+                      <Data value="$5.00"/>
+                      <Data value="$40.00"/>
+                      <Data value="$15.00"/>
+                      <Data value="$18.00"/>
+                      <Data value="$21.00"/>
+                      <Data value="$12.00"/>
+                      <Data value="$22.00"/>
+                      <Data value="$4.00"/>
+                      <Data value="$40.00"/>
+                      <Data value="$41.00"/>
+                    </Column>
                   </Table>
                 </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="showGrid" type="boolean" value="false"/>
                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
@@ -98,6 +238,9 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField14">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Franklin Gothic Medium Cond" size="24" style="0"/>
             </Property>
@@ -294,7 +437,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Franklin Gothic Medium Cond" size="36" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="PRODUCT MAGEMENT"/>
+                <Property name="text" type="java.lang.String" value="PRODUCTS MAGEMENT"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -325,11 +468,12 @@
               <Font name="Franklin Gothic Medium Cond" size="24" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="5">
+                <StringItem index="0" value="Baby toys&#x9;"/>
+                <StringItem index="1" value="Baby skin care&#x9;"/>
+                <StringItem index="2" value="Baby gear&#x9;"/>
+                <StringItem index="3" value="Baby foods&#x9;"/>
+                <StringItem index="4" value=" "/>
               </StringArray>
             </Property>
           </Properties>

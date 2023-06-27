@@ -71,11 +71,12 @@ public class ManageUsers extends javax.swing.JFrame {
         jLabel36.setText("Password");
         jPanel6.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 120, 24));
 
+        jTextField37.setBackground(new java.awt.Color(204, 204, 204));
         jTextField37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel6.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 280, -1));
 
         jLabel37.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        jLabel37.setText("ID");
+        jLabel37.setText("User ID");
         jPanel6.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 24));
 
         jLabel38.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
@@ -92,6 +93,7 @@ public class ManageUsers extends javax.swing.JFrame {
         jLabel39.setText("Email");
         jPanel6.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 120, 24));
 
+        jTextField40.setBackground(new java.awt.Color(204, 204, 204));
         jTextField40.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         jPanel6.add(jTextField40, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 280, -1));
 
